@@ -1,0 +1,14 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    max-width: 100%;
+    margin: auto;
+    &-header {
+        background-color: black;
+        color: gold;
+    }
+}
