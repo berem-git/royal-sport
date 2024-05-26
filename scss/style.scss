@@ -212,6 +212,27 @@ a {
     transform: rotate(125deg);
 }
 
+.contacts {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.contacts p {
+    margin: 10px 0;
+}
+
+.contacts a {
+    color: #007bff;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+
+
 .stock-preorder-item h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
