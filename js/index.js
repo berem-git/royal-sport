@@ -24,7 +24,7 @@ const localization = {
   },
   en: {
     about: "About Us",
-    brands: "Brands",
+    brand: "Brands",
     cooperation: "Cooperation",
     geography: "Geography",
     welcom: "WELCOME TO THE WORLD OF ROYAL SPORT!",
@@ -50,7 +50,7 @@ const localization = {
 
   kg: {
     about: "Биз жөнүндө",
-    brands: "Бренддер",
+    brand: "Бренддер",
     cooperation: "Кызматташуу",
     geography: "География",
     welcom: "ROYAL СПОРТ ДҮЙНӨСҮНӨ КОШ КЕЛИҢИЗ!",
