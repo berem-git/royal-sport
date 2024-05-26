@@ -104,6 +104,11 @@ function changeLanguage(language) {
     localization[language].geography;
 
   localStorage.setItem("preferredLanguage", language);
+  document.querySelectorAll('.header-language span').forEach(span => {
+    span.classList.remove('selected');
+});
+document.getElementById(`lang-${language}`).classList.add('selected');
+localStorage.setItem("preferredLanguage", language);
 }
 
 function loadPreferredLanguage() {
