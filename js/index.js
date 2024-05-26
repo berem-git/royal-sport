@@ -4,7 +4,11 @@ const localization = {
     brand: "Бренды",
     cooperation: "Сотрудничество",
     geography: "География",
-    welcom: "ДОБРО ПОЖАЛОВАТЬ В МИР Roayl Sport!",
+    welcom: "ДОБРО ПОЖАЛОВАТЬ В МИР ROAYL SPORT!",
+    royalBrendsDescription:
+      "В нашем лице вы найдете сильного международного партнера, который активно растет и развивается. Вас ждет поддержка, взаимовыгодное сотрудничество и возможности для роста. Давайте создадим успешное будущее вместе!",
+    royalBrends:
+      "ROAYL SPORT! — ОФИЦИАЛЬНЫЙ ПРЕДСТАВИТЕЛЬ КИТАЙСКОГО БРЕНДА ERKE, ADIDAS, XSTEP В КЫРГЫЗСТАНЕ",
     erkeHistory1:
       "Основанная в 2000 году, штаб-квартира группы ERKE находится в Сямыне, Южный Китай, провинция Фуцзянь. После многих лет упорной работы ERKE превратилась в один из ведущих спортивных брендов в Китае, объединяющий комплексные возможности исследований и разработок, производства, продаж и маркетинга с более чем 30 000 сотрудников и более 7 000 монобрендовых магазинов, расположенных по всему Китаю и по всему миру.",
     erkeHistory2:
@@ -23,7 +27,13 @@ const localization = {
     brands: "Brands",
     cooperation: "Cooperation",
     geography: "Geography",
-    welcom: "ДОБРО ПОЖАЛОВАТЬ В МИР Roayl Sport!",
+    welcom: "WELCOME TO THE WORLD OF ROYAL SPORT!",
+
+    royalBrendsDescription:
+      "In us you will find a strong international partner who is actively growing and developing. Support, mutually beneficial cooperation and opportunities for growth await you. Let's create a successful future together!",
+
+    royalBrends:
+      "ROYAL SPORT! — OFFICIAL REPRESENTATIVE OF THE CHINESE BRAND ERKE, ADIDAS, XSTEP IN KYRGYZSTAN",
     erkeHistory1:
       "Founded in 2000, the ERKE Group is headquartered in Xiamen, South China, Fujian Province. After many years of hard work, ERKE has become one of China's leading leading brands bringing together comprehensive research and development, production, sales and marketing with more than 30,000 employees and more than 7,000  mono-brand stores operating throughout China and around the world",
     erkeHistory2:
@@ -32,7 +42,8 @@ const localization = {
       "At the 2008 Olympics sponsored the Chinese women's heavyweight team weightlifting up to 48 kg, presented by Chen Xixia, won the first gold medal, as well as sponsored the DPRK of Korea, which won two gold medals, one silver and three bronze medals.",
     xstepHistory1:
       "Xtep is a Chinese company that began its activities with the production of sports equipment, today known for its high-quality sportswear and shoes. The headquarters is located in Hong Kong. Xtep is engaged in the design, development, production, sales, marketing and brand management of sports equipment, including footwear, apparel and accessories. It is a leading manufacturer of sports shoes and apparel in China, with an extensive retail network of more than 7,500 stores covering 31 provinces, autonomous regions and municipalities in China and abroad. Sanxing Sporting Goods Co., Ltd. was in 1987",
-    xstepHistory2: "The Xtep brand was created in 2001\nOn June 3, 2008, the trademark was officially registered on the Hong Kong Stock Exchange. In 2019, it merged with several international brands through acquisitions or joint ventures to become a multi-brand and international group. . The Group currently operates six sports brands: Xtep, Xtep Kids, Saucony, Merrell, K SWISS and Palladium. Since its establishment in 2001, the group's core brand “Xtep” has an extensive distribution network of more than 7,500 retail stores, covering 31 provinces, autonomous regions and municipalities in China, as well as overseas regions. Currently, foreign sales of products are in Asia, Europe and the Middle East.\n On November 25, 2021, the first XTEP store was officially opened in Bishkek, Kyrgyzstan",
+    xstepHistory2:
+      "The Xtep brand was created in 2001\nOn June 3, 2008, the trademark was officially registered on the Hong Kong Stock Exchange. In 2019, it merged with several international brands through acquisitions or joint ventures to become a multi-brand and international group. . The Group currently operates six sports brands: Xtep, Xtep Kids, Saucony, Merrell, K SWISS and Palladium. Since its establishment in 2001, the group's core brand “Xtep” has an extensive distribution network of more than 7,500 retail stores, covering 31 provinces, autonomous regions and municipalities in China, as well as overseas regions. Currently, foreign sales of products are in Asia, Europe and the Middle East.\n On November 25, 2021, the first XTEP store was officially opened in Bishkek, Kyrgyzstan",
     xstepHistory3:
       "Since its establishment in 2001, the group's core brand “Xtep” has an extensive distribution network of more than 7,500 retail stores, covering 31 provinces, autonomous regions and municipalities in China, as well as overseas regions. Currently, overseas product sales are in Asia, Europe and the Middle East.\n November 25, 2021 was the official opening of the first XTEP store in Kyrgyzstan, Bishkek",
   },
@@ -42,7 +53,13 @@ const localization = {
     brands: "Бренддер",
     cooperation: "Кызматташуу",
     geography: "География",
-    welcom: "ДОБРО ПОЖАЛОВАТЬ В МИР Roayl Sport!",
+    welcom: "ROYAL СПОРТ ДҮЙНӨСҮНӨ КОШ КЕЛИҢИЗ!",
+
+    royalBrendsDescription:
+      "Бизден сиз жигердүү өсүп жана өнүгүп жаткан күчтүү эл аралык өнөктөш таба аласыз. Сизди колдоо, өз ара пайдалуу кызматташуу жана өсүү үчүн мүмкүнчүлүктөр күтүп турат. Келгиле, ийгиликтүү келечекти бирге түзөлү!",
+
+    royalBrends:
+      "ROYAL SPORT! — КЫТАЙДАГЫ ERKE, ADIDAS, XSTEP БРЕНДИНИН КЫРГЫЗСТАНДАГЫ РАСМИЙ ӨКҮЛҮ",
     erkeHistory1:
       "ERKE бренди күнүмдүк спорт тармагында жайгашып, керектөөчүлөргө басым жасап, ушундай буюмдарды сунуштайт кийимдер, бут кийимдер жана аксессуарлар сыяктуу кийимдер, алардын күнүмдүк спорттук муктаждыктарын канааттандыруу үчүн спорт, эс алуу, теннис жана сырткы иш-чаралар сыяктуу стилдер",
     erkeHistory2:
@@ -51,7 +68,8 @@ const localization = {
       "2008-жылкы Олимпиадада Кытайдын оор салмактагы аялдар командасы тарабынан каржыланган 48 кг чейин оор атлетика, Чен Сисиа тарабынан сунушталган, биринчи алтын медалды, ошондой эле эки алтын медалга ээ болгон Кореянын КЭДРинин демөөрчүлүгү менен, бир күмүш жана үч коло медаль.",
     xstepHistory1:
       "Xtep - бул кытай өлкөсүүнүн  компаниясы, спорттук жабдууларды чыгарууда өз ишин баштаган, бүгүнкү күндө өзүнүн жогорку сапаттагы спорттук кийимдери жана бут кийимдери менен белгилүү. Башкы кеңсеси Гонконгдо жайгашкан. Xtep спорттук жабдууларды, анын ичинде бут кийимдерди, кийимдерди жана аксессуарларды долбоорлоо, иштеп чыгуу, өндүрүү, сатуу, маркетинг жана бренд башкаруу менен алектенет. Бул Кытайдагы спорттук бут кийимдердин жана кийимдердин алдыңкы өндүрүүчүсү, 7500дөн ашык дүкөндөрдүн кеңири чекене тармагы менен 31 провинцияны, автономиялуу аймактарды жана муниципалитеттерди бүткүл Кытайда жана чет өлкөлөрдө камтыйт. Sanxing Sporting Goods Co., Ltd. 1987-жылы негизделген;",
-    xstepHistory2: "Xtep бренди 2001-жылы түзүлгөн\n2008-жылдын 3-июнунда товардык белги Гонконг фондулук биржасында расмий түрдө катталган. 2019-жылы ал сатып алуулар же биргелешкен ишканалар аркылуу бир нече эл аралык бренддер менен биригип, мульти-бренддүү жана эл аралык топко айланды. . Топ учурда алты спорттук брендди башкарат: Xtep, Xtep Kids, Saucony, Merrell, K SWISS жана Palladium. 2001-жылы түзүлгөндөн бери, топтун негизги бренди “Xtep” Кытайдын 31 провинциясын, автономдуу аймактарын жана муниципалитеттерин, ошондой эле чет өлкөлөрдөгү аймактарды камтыган 7500дөн ашык чекене дүкөндөрдүн кеңири жайылтуу тармагына ээ. Учурда товарлардын тышкы сатыктары Азия, Европа жана Жакынкы Чыгышта.\n 2021-жылдын 25-ноябрында биринчи XTEP дүкөнү расмий түрдө Бишкекте, Кыргызстанда ачылган.",
+    xstepHistory2:
+      "Xtep бренди 2001-жылы түзүлгөн\n2008-жылдын 3-июнунда товардык белги Гонконг фондулук биржасында расмий түрдө катталган. 2019-жылы ал сатып алуулар же биргелешкен ишканалар аркылуу бир нече эл аралык бренддер менен биригип, мульти-бренддүү жана эл аралык топко айланды. . Топ учурда алты спорттук брендди башкарат: Xtep, Xtep Kids, Saucony, Merrell, K SWISS жана Palladium. 2001-жылы түзүлгөндөн бери, топтун негизги бренди “Xtep” Кытайдын 31 провинциясын, автономдуу аймактарын жана муниципалитеттерин, ошондой эле чет өлкөлөрдөгү аймактарды камтыган 7500дөн ашык чекене дүкөндөрдүн кеңири жайылтуу тармагына ээ. Учурда товарлардын тышкы сатыктары Азия, Европа жана Жакынкы Чыгышта.\n 2021-жылдын 25-ноябрында биринчи XTEP дүкөнү расмий түрдө Бишкекте, Кыргызстанда ачылган.",
     xstepHistory3:
       "2001-жылы түзүлгөндөн бери, топтун негизги бренди “Xtep” Кытайдын 31 провинциясын, автономдуу аймактарын жана муниципалитеттерин, ошондой эле чет өлкөлөрдөгү аймактарды камтыган 7500дөн ашык чекене дүкөндөрдүн кеңири жайылтуу тармагына ээ. Азыркы учурда, чет продуктыларды сатуу Азияда, Европада жана Жакынкы Чыгышта. 2021-жылдын 25-ноябрында Кыргызстандагы биринчи XTEP дүкөнүнүн расмий ачылышы болду, Бишкек шаарында.",
   },
@@ -70,9 +88,16 @@ function changeLanguage(language) {
     localization[language].xstepHistory2;
   document.getElementById("xstepHistory3").textContent =
     localization[language].xstepHistory3;
+  document.getElementById("royalBrends").textContent =
+    localization[language].royalBrends;
+    document.getElementById("royalBrendsDescription").textContent =
+    localization[language].royalBrendsDescription;
+  document.getElementById("welcom").textContent =
+    localization[language].welcom;
+
 
   document.getElementById("about").textContent = localization[language].about;
-  document.getElementById("brands").textContent = localization[language].brands;
+  document.getElementById("brand").textContent = localization[language].brands;
   document.getElementById("cooperation").textContent =
     localization[language].cooperation;
   document.getElementById("geography").textContent =
