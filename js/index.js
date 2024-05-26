@@ -97,7 +97,7 @@ function changeLanguage(language) {
 
 
   document.getElementById("about").textContent = localization[language].about;
-  document.getElementById("brand").textContent = localization[language].brands;
+  document.getElementById("brand").textContent = localization[language].brand;
   document.getElementById("cooperation").textContent =
     localization[language].cooperation;
   document.getElementById("geography").textContent =
