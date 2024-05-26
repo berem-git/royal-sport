@@ -13,9 +13,11 @@
     text-align: center;
     line-height: 1.55;
     font-weight: 500;
+    grid-template-areas: "menu logo lang";
     border-bottom: 1px solid white;
 
     &-menu {
+        grid-area: menu;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -28,11 +30,11 @@
         }
     }
     &-logo {
-        width: 105px;
-        height: 63px;
+        grid-area: logo;
         cursor: pointer;
     }
     &-language {
+        grid-area: lang;
         display: flex;
         justify-content: end;
         gap: 16px;
@@ -58,10 +60,8 @@
         text-align: left;
         font-size: 56px;
         font-weight: 700;
-        margin-bottom: 38px;
-        span {
-            color: rgb(102, 154, 161);
-        }
+        text-align: center;
+        margin: 0 24px 38px 16px;
     }
     &_main-banner {
         width: 100%;
@@ -74,14 +74,25 @@
         span {
             font-size: 96px;
             color: goldenrod;
-        }
+        }   
     }
     &-block {
         position: relative;
         display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        margin: 0 16px 38px 16px;
+        gap: 28px;
+
+        @media screen and (min-width: 1024px) {
         grid-template-columns: 1fr 1fr;
-        margin-bottom: 38px;
         gap: 38px;
+
+        }
+        &-img {
+            max-width: 100%;
+            height: auto;
+        }
         &-list {
             display: grid;
             grid-template-columns: 52px 1fr;
@@ -210,8 +221,6 @@
 .contacts a:hover {
     text-decoration: underline;
 }
-
-
 
 .stock-preorder-item h2 {
     font-size: 1.5em;

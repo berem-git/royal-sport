@@ -46,9 +46,11 @@ a {
   text-align: center;
   line-height: 1.55;
   font-weight: 500;
+  grid-template-areas: "menu logo lang";
   border-bottom: 1px solid white;
 }
 .header-menu {
+  grid-area: menu;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -61,11 +63,11 @@ a {
   color: white;
 }
 .header-logo {
-  width: 105px;
-  height: 63px;
+  grid-area: logo;
   cursor: pointer;
 }
 .header-language {
+  grid-area: lang;
   display: flex;
   justify-content: end;
   gap: 16px;
@@ -91,10 +93,8 @@ a {
   text-align: left;
   font-size: 56px;
   font-weight: 700;
-  margin-bottom: 38px;
-}
-.content-title span {
-  color: rgb(102, 154, 161);
+  text-align: center;
+  margin: 0 24px 38px 16px;
 }
 .content_main-banner {
   width: 100%;
@@ -112,9 +112,20 @@ a {
 .content-block {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 38px;
-  gap: 38px;
+  align-items: center;
+  grid-template-columns: 1fr;
+  margin: 0 16px 38px 16px;
+  gap: 28px;
+}
+@media screen and (min-width: 1024px) {
+  .content-block {
+    grid-template-columns: 1fr 1fr;
+    gap: 38px;
+  }
+}
+.content-block-img {
+  max-width: 100%;
+  height: auto;
 }
 .content-block-list {
   display: grid;
