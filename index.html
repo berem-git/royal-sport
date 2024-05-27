@@ -9,33 +9,37 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i&display=swap&subset=cyrillic-ext"
-        rel="stylesheet" />
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header-menu">
-                <a href="#abouts" id="about">О нас</a>
-                <a href="#brands" id="brand">Бренды</a>
-                <a href="#" id="cooperation">Сотрудничество</a>
-                <a href="#contacts-id" id="geography">География</a>
-            </div>
-            <div class="header-logo">
-                <img src="img/logo.png" />
-            </div>
-            <div class="header-language">
-                <span id="lang-ru">RU</span>
-                <span id="lang-en">EN</span>
-                <span id="lang-kg">KG</span>
-            </div>
-        </header>
+        <div class="header-wrapper">
+            <header class="header">
+                <div class="header-menu">
+                    <img src="img/logo.svg" />
+                    <a href="#abouts" id="about">О нас</a>
+                    <div class="dropdown">
+                        <a href="#brand1" id="brand" onclick="toggleDropdown(event)">Бренды</a>
+                        <div class="dropdown-content">
+                            <a href="#brand1">ERKE</a>
+                            <a href="#brand2">XTEP</a>
+                            <a href="#brand3">ADIDAS</a>
+                        </div>
+                    </div>
+                    <a href="#" id="cooperation">Сотрудничество</a>
+                    <a href="#contacts-id" id="geography">География</a>
+                </div>
+                <div class="header-language">
+                    <span id="lang-ru">RU</span>
+                    <span id="lang-en">EN</span>
+                    <span id="lang-kg">KG</span>
+                </div>
+            </header>
+        </div>
         <main>
-            <img class="content_main-banner" src="img/banner_rs.jpg" />
+            <img class="content_main-banner" src="img/banner-rs.jpg" />
             <div id="abouts" class="content">
-                <h1 id="welcom" class="content-title">ДОБРО ПОЖАЛОВАТЬ В МИР ROYAL SPORT!</h1>
+                <h1 class="content-title">ДОБРО ПОЖАЛОВАТЬ В МИР <span>ROYAL SPORT!</span></h1>
                 <div class="content-block">
                     <div>
                         <img class="content-block-img" src="img/20.jpg" />
@@ -52,25 +56,25 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div id="brands" class="content-block">
-                    <h2 class="content-title">МЫ <span>БУДЕМ ПОЛЕЗНЫ </span>ТЕМ, КТО:</h2>
+                <div class="content-block">
+                    <h2 class="content-title"><span>МЫ БУДЕМ ПОЛЕЗНЫ ТЕМ, КТО:</span></h2>
                     <div class="content-list">
                         <div class="content-item">
-                            <img src="img/Group_21.svg" height="21" width="41" alt="">
+                            <img src="img/zip.svg" height="21" width="41" alt="">
                             <span>Желает расширить ассортимент магазина</span>
                         </div>
                         <div class="content-item">
-                            <img src="img/Group_21.svg" height="21" width="41" alt="">
+                            <img src="img/zip.svg" height="21" width="41" alt="">
                             <span>Ищет партнера для открытия бизнеса</span>
                         </div>
                         <div class="content-item">
-                            <img src="img/Group_21.svg" height="21" width="41" alt="">
+                            <img src="img/zip.svg" height="21" width="41" alt="">
                             <span>Занимается одеждой для спортивных команд или готовит соревнования</span>
                         </div>
                     </div>
-                </div> -->
-                <div id="brands" class="content-block">
-                    <img  class="content-block-img" src="img/erke.jpeg" />
+                </div>
+                <div id="brand1" class="content-block">
+                    <img class="content-block-img" src="img/erke.jpeg" />
                     <div class="content-block-history">
                         <span class="content-block-title-h2">
                             ERKE
@@ -109,8 +113,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="content-block">
-
+                <div id="brand2" class="content-block">
                     <div class="content-block-history">
                         <span class="content-block-title-h2">
                             XTEP
@@ -142,30 +145,38 @@
                             зарубежные продажи продукции в Азии, Европе и на Среднем Востоке.
                         </p>
                     </div>
-                    <img  class="content-block-img" src="img/xtep.jpg" />
+                    <img class="content-block-img" src="img/xtep.jpg" />
                 </div>
-                <div>
-                    <span class="content-title">ВОЗМОЖНЫЕ ФОРМАТЫ ОПТОВОГО СОТРУДНИЧЕСТВА</span>
-                    <div class="stock-preorder-section">
-                        <div class="stock-preorder-item">
-                            <h2>СВОБОДНЫЙ СТОК</h2>
-                            <p>товары, которые доступны для покупки в любое время</p>
-                            <div class="rectangle"></div>
-
-                        </div>
-                        <div class="stock-preorder-item">
-                            <h2>ПРЕДЗАКАЗ</h2>
-                            <p>возможность заказа товаров заранее, до их фактического поступления на склад</p>
-                            <div class="rectangle"></div>
-                        </div>
-                        <div class="stock-preorder-image">
-                            <img class="content-block-img" src="img/9_1_1.jpg" alt="Image description">
-                        </div>
+                <div id="brand3" class="content-block">
+                    <img class="content-block-img" src="img/adidas.png" />
+                    <div class="content-block-history">
+                        <span class="content-block-title-h2">
+                            ADIDAS
+                        </span>
+                        <p id="adidasHistory1">
+                            С момента своего основания в 1949 году, штаб-квартира adidas Group расположена в
+                            Херцогенаурахе, Германия. Благодаря десятилетиям упорной работы и инноваций, adidas
+                            превратилась в один из ведущих мировых спортивных брендов. Компания объединяет в себе
+                            обширные возможности исследований и разработок, производства, продаж и маркетинга, что
+                            позволяет ей оставаться на передовой спортивной индустрии.
+                        </p>
+                        <p id="adidasHistory2">
+                            adidas активно внедряет инновации и использует новейшие технологии для создания
+                            высококачественной продукции. Особое внимание уделяется устойчивому развитию и экологически
+                            чистым материалам, что отражается в различных инициативах компании по защите окружающей
+                            среды.
+                        </p>
+                        <p id="adidasHistory3">
+                            Благодаря своей приверженности качеству и инновациям, adidas завоевала доверие миллионов
+                            спортсменов и любителей активного образа жизни по всему миру. Компания продолжает расширять
+                            своё присутствие на глобальном рынке, открывая новые магазины и улучшая существующие, чтобы
+                            обеспечить доступ к своей продукции каждому, кто стремится к лучшим результатам.
+                        </p>
                     </div>
                 </div>
                 <div id="contacts-id" class="content-block">
                     <div>
-                        <h2 class="content-title">ГЕОГРАФИЯ ROYAL SPORT</h2>
+                        <h2 class="content-block-title-h2">ГЕОГРАФИЯ ROYAL SPORT</h2>
                         <p>
                             Мы стремимся быть ближе к покупателю, поэтому активно развиваем как оптовый, так и
                             розничный
@@ -239,10 +250,9 @@
         </main>
         <footer>
             <div class="footer-content">
-                <img src="img/logo.png" alt="Admix Sport Logo">
-                <p>© Admix Sport 2023</p>
-                <p>ООО «АДМИКС СПОРТ», г. Краснодар, ул. Автолюбителей д.1/7, к.4, кв.47</p>
-                <p><a href="#">Оферта программы лояльности</a></p>
+                <img src="img/logo.svg" alt="Admix Sport Logo">
+                <p>© Royal Sport 2024</p>
+                <p>ОсОО Роял Спорт Кыргызстан, Бишкек ул. Федорова 13</p>
             </div>
         </footer>
     </div>
