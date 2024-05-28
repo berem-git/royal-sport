@@ -34,6 +34,11 @@
                     <span id="lang-en">EN</span>
                     <span id="lang-kg">KG</span>
                 </div>
+                <div class="burger-menu" onclick="toggleBurgerMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </header>
         </div>
         <main>
@@ -46,7 +51,7 @@
                     </div>
                     <div>
                         <span id="royalBrends" class="content-block-title">
-                            ROYAL SPORT! — ОФИЦИАЛЬНЫЙ ПРЕДСТАВИТЕЛЬ КИТАЙСКОГО БРЕНДА ERKE, ADIDAS, XTEP В КЫРГЫЗСТАНЕ
+                            ROYAL SPORT — ОФИЦИАЛЬНЫЙ ПРЕДСТАВИТЕЛЬ КИТАЙСКОГО БРЕНДА ERKE, ADIDAS, XTEP В КЫРГЫЗСТАНЕ!
                         </span>
                         <p id="royalBrendsDescription" class="content-block-sub-title">
                             В нашем лице вы найдете сильного международного партнера, который активно растет и
@@ -57,7 +62,7 @@
                     </div>
                 </div>
                 <div class="content-block">
-                    <h2 class="content-title"><span>МЫ БУДЕМ ПОЛЕЗНЫ ТЕМ, КТО:</span></h2>
+                    <h2 class="content-title">МЫ БУДЕМ <span>ПОЛЕЗНЫ</span> ТЕМ, КТО:</h2>
                     <div class="content-list">
                         <div class="content-item">
                             <img src="img/zip.svg">
@@ -114,12 +119,14 @@
                     </div>
                 </div>
                 <div id="brand2" class="content-block">
+                    <img class="content-block-img" src="img/xtep.jpg" />
+
                     <div class="content-block-history">
                         <span class="content-block-title-h2">
                             XTEP
                         </span>
                         <p id="xtepHistory1">
-                            китайская компания, начавшая свою деятельность с производства спортивного инвентаря,
+                            Китайская компания, начавшая свою деятельность с производства спортивного инвентаря,
                             известная сегодня своей высококачественной спортивной одеждой и обувью. Штаб-квартира
                             расположена в Гонконге.
                             Xtep занимается проектированием, разработкой, производством, продажами, маркетингом и
@@ -145,7 +152,6 @@
                             зарубежные продажи продукции в Азии, Европе и на Среднем Востоке.
                         </p>
                     </div>
-                    <img class="content-block-img" src="img/xtep.jpg" />
                 </div>
                 <div id="brand3" class="content-block">
                     <img class="content-block-img" src="img/adidas.png" />
@@ -176,7 +182,7 @@
                 </div>
                 <div id="contacts-id" class="content-block">
                     <div>
-                        <h2 class="content-block-title-h2">ГЕОГРАФИЯ ROYAL SPORT</h2>
+                        <h2 class="content-block-title-h2">ГЕОГРАФИЯ <span>ROYAL SPORT</span></h2>
                         <p>
                             Мы стремимся быть ближе к покупателю, поэтому активно развиваем как оптовый, так и
                             розничный
@@ -185,11 +191,14 @@
                         </p>
                     </div>
                     <div class="contacts">
+                        <div>
+                            <h4>Erke</h4>
+                        </div>
+                        <p>Город Бишкек ул. Шопокова 91 Тц ЦУМ <a href="tel:+996998488080">+996 998 48-80-80</a></p>
                         <p>Город Бишкек улица киевская 148 тц Бишкек парк 1 этаж <a href="tel:+996998689888">+996 998
                                 689 888</a></p>
                         <p>Город Бишкек Пр. Чынгыз Айтматова 3 Тц Азия молл 2 этаж <a href="tel:+996999488080">+996 999
                                 48-80-80</a></p>
-                        <p>Город Бишкек ул. Шопокова 91 Тц ЦУМ <a href="tel:+996998488080">+996 998 48-80-80</a></p>
                         <p>Город Джалал абад ул. Токтогула 40 ТЦ Плаза <a href="tel:+996488080">+996 48-80-80</a></p>
                     </div>
                 </div>
@@ -257,6 +266,42 @@
         </footer>
     </div>
     </div>
+    <script type="module" > 
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBf1DPbzD-m4_6O-uHe0MFd3HBE6gmgPgs",
+  authDomain: "royal-sport-bbc35.firebaseapp.com",
+  projectId: "royal-sport-bbc35",
+  storageBucket: "royal-sport-bbc35.appspot.com",
+  messagingSenderId: "235684114432",
+  appId: "1:235684114432:web:b1b52258ef2170afe268e5",
+  measurementId: "G-36KM8L2J6T"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+function logButtonClick(event) {
+  const buttonId = event.target.id;
+  logEvent(analytics, 'button_click', {
+    button_id: buttonId
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll('a, button, .dropdown-content a, .header-language span');
+  buttons.forEach(button => {
+    button.addEventListener('click', logButtonClick);
+  });
+
+  document.querySelector('.burger-menu').addEventListener('click', () => {
+    logEvent(analytics, 'menu_toggle', {
+      menu_state: document.querySelector('.header').classList.contains('open') ? 'open' : 'closed'
+    });
+  });
+}); </script>
     <script src="js/index.js"></script>
 </body>
 

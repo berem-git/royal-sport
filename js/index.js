@@ -8,7 +8,7 @@ const localization = {
     royalBrendsDescription:
       "В нашем лице вы найдете сильного международного партнера, который активно растет и развивается. Вас ждет поддержка, взаимовыгодное сотрудничество и возможности для роста. Давайте создадим успешное будущее вместе!",
     royalBrends:
-      "ROAYL SPORT! — ОФИЦИАЛЬНЫЙ ПРЕДСТАВИТЕЛЬ КИТАЙСКОГО БРЕНДА ERKE, ADIDAS, XTEP В КЫРГЫЗСТАНЕ",
+      "ROAYL SPORT — ОФИЦИАЛЬНЫЙ ПРЕДСТАВИТЕЛЬ КИТАЙСКОГО БРЕНДА ERKE, ADIDAS, XTEP В КЫРГЫЗСТАНЕ!",
     erkeHistory1:
       "Основанная в 2000 году, штаб-квартира группы ERKE находится в Сямыне, Южный Китай, провинция Фуцзянь. После многих лет упорной работы ERKE превратилась в один из ведущих спортивных брендов в Китае, объединяющий комплексные возможности исследований и разработок, производства, продаж и маркетинга с более чем 30 000 сотрудников и более 7 000 монобрендовых магазинов, расположенных по всему Китаю и по всему миру.",
     erkeHistory2:
@@ -16,7 +16,7 @@ const localization = {
     erkeHistory3:
       "На Олимпийских играх 2008 года спонсировал женскую сборную Китая по тяжелой атлетике весом до 48 кг, представленную Чэнь Сеся, завоевавшей первую золотую медаль, а также спонсировал КНДР Кореи, завоевавшую две золотые, одну серебряную и три бронзовые медали.",
     xtepHistory1:
-      "Xtep — китайская компания, начавшая свою деятельность с производства спортивного инвентаря, известная сегодня своей высококачественной спортивной одеждой и обувью. Штаб-квартира расположена в Гонконге. Xtep занимается проектированием, разработкой, производством, продажами, маркетингом и бренд-менеджментом спортивного инвентаря, включая обувь, одежду и аксессуары. Это ведущий производитель спортивной обуви и одежды в Китае с обширной розничной сетью из более чем 7500 магазинов, охватывающих 31 провинцию, автономные районы и муниципалитеты по всей территории КНР и за рубежом. Компания «Sanxing Sporting Goods Co., Ltd.» была основана в 1987 году",
+      "Xtep — Китайская компания, начавшая свою деятельность с производства спортивного инвентаря, известная сегодня своей высококачественной спортивной одеждой и обувью. Штаб-квартира расположена в Гонконге. Xtep занимается проектированием, разработкой, производством, продажами, маркетингом и бренд-менеджментом спортивного инвентаря, включая обувь, одежду и аксессуары. Это ведущий производитель спортивной обуви и одежды в Китае с обширной розничной сетью из более чем 7500 магазинов, охватывающих 31 провинцию, автономные районы и муниципалитеты по всей территории КНР и за рубежом. Компания «Sanxing Sporting Goods Co., Ltd.» была основана в 1987 году",
     xtepHistory2:
       "Бренд Xtep создан в 2001 году\n 3 июня 2008 года состоялась официальная регистрация торговой марки на Гонконгской фондовой бирже. В 2019 году объединилась с несколькими международными брендами путем приобретений или создания совместных предприятий, чтобы стать мультибрендовой и интернациональной группой. . В настоящее время Группа управляет шестью спортивными брендами: Xtep, Xtep Kids, Saucony, Merrell, K · SWISS и Palladium. С момента своего создания в 2001 году основной бренд группы “Xtep” имеет обширную дистрибьюторскую сеть из более чем 7500 розничных магазинов, охватывающих 31 провинцию, автономный район и муниципалитет Китая, а также зарубежные регионы. В настоящее время зарубежные продажи продукции в Азии, Европе и на Среднем Востоке.\n 25.11.2021 года было официальное открытие первого магазина XTEP в Кыргызстане г.Бишкек",
     xtepHistory3:
@@ -39,7 +39,7 @@ const localization = {
       "In us you will find a strong international partner who is actively growing and developing. Support, mutually beneficial cooperation and opportunities for growth await you. Let's create a successful future together!",
 
     royalBrends:
-      "ROYAL SPORT! — OFFICIAL REPRESENTATIVE OF THE CHINESE BRAND ERKE, ADIDAS, XTEP IN KYRGYZSTAN",
+      "ROYAL SPORT — OFFICIAL REPRESENTATIVE OF THE CHINESE BRAND ERKE, ADIDAS, XTEP IN KYRGYZSTAN!",
     erkeHistory1:
       "Founded in 2000, the ERKE Group is headquartered in Xiamen, South China, Fujian Province. After many years of hard work, ERKE has become one of China's leading leading brands bringing together comprehensive research and development, production, sales and marketing with more than 30,000 employees and more than 7,000  mono-brand stores operating throughout China and around the world",
     erkeHistory2:
@@ -71,7 +71,7 @@ const localization = {
       "Бизден сиз жигердүү өсүп жана өнүгүп жаткан күчтүү эл аралык өнөктөш таба аласыз. Сизди колдоо, өз ара пайдалуу кызматташуу жана өсүү үчүн мүмкүнчүлүктөр күтүп турат. Келгиле, ийгиликтүү келечекти бирге түзөлү!",
 
     royalBrends:
-      "ROYAL SPORT! — КЫТАЙДАГЫ ERKE, ADIDAS, XTEP БРЕНДИНИН КЫРГЫЗСТАНДАГЫ РАСМИЙ ӨКҮЛҮ",
+      "ROYAL SPORT — КЫТАЙДАГЫ ERKE, ADIDAS, XTEP БРЕНДИНИН КЫРГЫЗСТАНДАГЫ РАСМИЙ ӨКҮЛҮ!",
     erkeHistory1:
       "ERKE бренди күнүмдүк спорт тармагында жайгашып, керектөөчүлөргө басым жасап, ушундай буюмдарды сунуштайт кийимдер, бут кийимдер жана аксессуарлар сыяктуу кийимдер, алардын күнүмдүк спорттук муктаждыктарын канааттандыруу үчүн спорт, эс алуу, теннис жана сырткы иш-чаралар сыяктуу стилдер",
     erkeHistory2:
@@ -170,5 +170,22 @@ document.addEventListener("click", function (event) {
     document.querySelector(".dropdown").classList.remove("active");
   }
 });
+
+function toggleBurgerMenu() {
+  document.querySelector(".header").classList.toggle("open");
+}
+
+document.addEventListener("click", function (event) {
+const dropdown = document.querySelector(".dropdown");
+const burgerMenu = document.querySelector(".burger-menu");
+const isClickInsideDropdown = dropdown.contains(event.target);
+const isClickInsideBurgerMenu = burgerMenu.contains(event.target);
+
+if (!isClickInsideDropdown && !isClickInsideBurgerMenu) {
+  dropdown.classList.remove("active");
+  document.querySelector(".header").classList.remove("open");
+}
+});
+
 
 window.onload = loadPreferredLanguage;
