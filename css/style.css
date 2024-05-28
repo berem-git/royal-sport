@@ -7,6 +7,7 @@
 .wrapper {
   max-width: 100%;
   margin: auto;
+  overflow-x: hidden;
 }
 .wrapper-header {
   background-color: black;
@@ -341,6 +342,10 @@ a {
   border: 1px solid #ddd;
   border-radius: 5px;
   margin: 0 auto;
+}
+.contacts h4 {
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .contacts p {
