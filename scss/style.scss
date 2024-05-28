@@ -156,8 +156,11 @@
         font-size: 48px;
         font-weight: 600;
         line-height: 58.09px;
-        text-align: left;
-        margin: 16px 24px;
+        margin: 16px;
+
+        @media (min-width: 670px) {
+            margin: 16px 24px;
+        }
         span {
             color: #f0a500;
             font-style: italic;
