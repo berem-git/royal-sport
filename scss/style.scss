@@ -197,7 +197,7 @@
         grid-template-columns: 1fr;
         margin: 0 16px 38px 16px;
         gap: 28px;
-
+    
         @media screen and (min-width: 670px) {
             grid-template-columns: 1fr 1fr;
             gap: 38px;
@@ -258,6 +258,10 @@
     }
 }
 
+.line {
+    background-repeat: no-repeat;
+    background-image: url("/img/Line.png");
+}
 .carousel {
     position: relative;
     display: flex;
@@ -339,17 +343,25 @@
 
 .contacts {
     padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 5px;
     margin: 0 auto;
-
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    &-item {
+        margin-bottom: 16px;
+    }
+    img {
+        margin-right: 8px;
+    }
     span {
         cursor: pointer;
         display: flex;
         align-items: center;
     }
+
     h4 {
-        margin-top: 32px;
+        margin-top: 0;
         margin-bottom: 8px;
     }
 }

@@ -184,5 +184,20 @@ document.addEventListener("click", function (event) {
     document.querySelector(".header").classList.remove("open");
   }
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(
+    "a, button, .dropdown-content a, .header-language span"
+  );
+  buttons.forEach((button) => {
+    button.addEventListener("click", logButtonClick);
+  });
 
+  document.querySelector(".burger-menu").addEventListener("click", () => {
+    logEvent(analytics, "menu_toggle", {
+      menu_state: document.querySelector(".header").classList.contains("open")
+        ? "open"
+        : "closed",
+    });
+  });
+});
 window.onload = loadPreferredLanguage;

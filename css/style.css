@@ -288,6 +288,11 @@ a {
   margin-bottom: 16px;
 }
 
+.line {
+  background-repeat: no-repeat;
+  background-image: url("/img/Line.png");
+}
+
 .carousel {
   position: relative;
   display: flex;
@@ -368,9 +373,17 @@ a {
 
 .contacts {
   padding: 20px;
-  border: 1px solid #ddd;
   border-radius: 5px;
   margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.contacts-item {
+  margin-bottom: 16px;
+}
+.contacts img {
+  margin-right: 8px;
 }
 .contacts span {
   cursor: pointer;
@@ -378,7 +391,7 @@ a {
   align-items: center;
 }
 .contacts h4 {
-  margin-top: 32px;
+  margin-top: 0;
   margin-bottom: 8px;
 }
 

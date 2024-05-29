@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.svg">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="header-wrapper">
+        <div class="header-wrapper animate__animated animate__fadeInRight">
             <header class="header">
                 <div class="header-menu">
                     <img class="logo" src="img/logo.svg" />
@@ -43,10 +48,10 @@
             </header>
         </div>
         <main>
-            <img class="content_main-banner" src="img/banner-rs.png" />
+            <img class="content_main-banner animate__animated animate__zoomIn" src="img/banner-rs.png" />
             <div id="abouts" class="content">
                 <h1 class="content-title">ДОБРО ПОЖАЛОВАТЬ В МИР <span>ROYAL SPORT!</span></h1>
-                <div class="content-block">
+                <div class="content-block line">
                     <div>
                         <img class="content-block-img" src="img/20.jpg" />
                     </div>
@@ -62,7 +67,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="content-block">
+                <div class="content-block ">
                     <h2 style="margin: 16px 0;" class="content-title">МЫ БУДЕМ <span>ПОЛЕЗНЫ</span> ТЕМ, КТО:</h2>
                     <div class="content-list">
                         <div class="content-item">
@@ -79,9 +84,9 @@
                         </div>
                     </div>
                 </div>
-                <div id="brand1" class="content-block">
+                <div id="brand1" class="content-block line">
                     <img class="content-block-img" src="img/erke.jpeg" />
-                    <div class="content-block-history">
+                    <div class="content-block-history line">
                         <span class="content-block-title-h2">
                             ERKE
                         </span>
@@ -119,7 +124,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="brand2" class="content-block">
+                <div id="brand2" class="content-block line">
                     <img class="content-block-img" src="img/xtep.jpg" />
 
                     <div class="content-block-history">
@@ -156,8 +161,8 @@
                 </div>
                 <div id="brand3" class="content-block">
                     <img class="content-block-img" src="img/adidas.png" />
-                    <div class="content-block-history">
-                        <span class="content-block-title-h2">
+                    <div class="content-block-history line">
+                        <span class="content-block-title-h2 ">
                             ADIDAS
                         </span>
                         <p id="adidasHistory1">
@@ -181,7 +186,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="contacts-id" class="content-block">
+                <div id="contacts-id">
                     <div>
                         <h2 class="content-block-title-h2">ГЕОГРАФИЯ <span>ROYAL SPORT</span></h2>
                         <p>
@@ -200,47 +205,122 @@
                     </div>
                     <div id="contacts" class="contacts">
                         <div>
-                            <h4 style="margin-top: 0;">ERKE</h4>
+                            <div>
+                                <h4 style="margin-top: 0;">ERKE</h4>
+                            </div>
+                            <div class="contacts-item">
+                                <span
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')"><img
+                                        src="img/map.svg" />г. Бишкек; ул.
+                                    Шопокова 91; ТРЦ ЦУМ Айчурек;</span>
+                                <span>
+                                    <img src="img/phone.svg" /> <a href="tel:+996998488080">+996 998
+                                        48-80-80</a>
+                                </span>
+                            </div>
+                            <div class="contacts-item">
+                                <span
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365.4863956318038!2d74.59051230718326!3d42.87514125298565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dec2f84b71%3A0x29c1629c788878ab!2z0JHQuNGI0LrQtdC6INCf0LDRgNC6!5e0!3m2!1sru!2skg!4v1716916857577!5m2!1sru!2skg')"><img
+                                        src="img/map.svg" />г.
+                                    Бишкек; ул.
+                                    Киевская 148; ТРЦ Bishkek Park;</span>
+                                <span>
+                                    <img src="img/phone.svg" /> <a href="tel:+996998689888">+996 998
+                                        68-98-88</a>
+                                </span>
+                            </div>
+                            <div class="contacts-item">
+                                <span
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.8116908462!2d74.58258377729538!3d42.85570920364228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9d3088356eb%3A0xb6b7beaa1240556a!2z0JDQt9C40Y8g0JzQvtC70Ls!5e0!3m2!1sru!2skg!4v1716996065367!5m2!1sru!2skg')"><img
+                                        src="img/map.svg" />г. Бишкек; пр.
+                                    Чынгыза Айтматова 3;
+                                    ТРЦ Asia Mall; 2 этаж;</span>
+
+                                <span>
+                                    <img src="img/phone.svg" /> <a href="tel:+996999488080">+996 999 48-80-80</a>
+                                </span>
+                            </div>
+                            <div class="contacts-item">
+                                <span
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6028.91150066074!2d72.9981912060447!3d40.9276777487814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd1558555fbe75%3A0x51a05ada005765d8!2sPlaza!5e0!3m2!1sru!2skg!4v1716996163234!5m2!1sru!2skg')"><img
+                                        src="img/map.svg" />г. Джалал-Абад; ул.
+                                    Токтогула 40; ТЦ
+                                    Plaza;</span>
+                                <span>
+                                    <img src="img/phone.svg" />
+                                    <a href="tel:+996554468888">+996 554 46-88-88</a>
+                                </span>
+                            </div>
+                            <div class="contacts-item">
+                                <span
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4289.936648427664!2d72.81999159585526!3d40.509691935603925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdaf57ebed3aa7%3A0x569a1082809d54cd!2s%22MAXCOM%22%20Urban%20Mall!5e0!3m2!1sru!2skg!4v1716995840991!5m2!1sru!2skg')"><img
+                                        src="img/map.svg" />г.
+                                    Ош; ул. Аскара
+                                    Шакирова 30; ТЦ
+                                    Maxcom Urban Mall; 2 этаж;</span>
+
+                                <span>
+                                    <img src="img/phone.svg" />
+                                    <a href="tel:+996554368888">+996 554 36-88-88</a>
+                                </span>
+                            </div>
                         </div>
-                        <p><span onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')"><img src="img/map.png"/>г. Бишкек; ул.
-                                Шопокова 91; ТРЦ ЦУМ Айчурек;</span><a href="tel:+996998488080">+996 998 48-80-80</a>
-                        </p>
-                        <p><span
-                                onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365.4863956318038!2d74.59051230718326!3d42.87514125298565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dec2f84b71%3A0x29c1629c788878ab!2z0JHQuNGI0LrQtdC6INCf0LDRgNC6!5e0!3m2!1sru!2skg!4v1716916857577!5m2!1sru!2skg')"><img src="img/map.png"/>г.
-                                Бишкек; ул.
-                                Киевская 148; ТРЦ Bishkek Park;</span><a href="tel:+996998689888">+996 998 68-98-88</a>
-                        </p>
-                        <p><span onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.8116908462!2d74.58258377729538!3d42.85570920364228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9d3088356eb%3A0xb6b7beaa1240556a!2z0JDQt9C40Y8g0JzQvtC70Ls!5e0!3m2!1sru!2skg!4v1716996065367!5m2!1sru!2skg')"><img src="img/map.png"/>г. Бишкек; пр.
-                                Чынгыза Айтматова 3;
-                                ТРЦ Asia Mall; 2 этаж;</span><a href="tel:+996999488080">+996 999 48-80-80</a></p>
-                        <p><span onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6028.91150066074!2d72.9981912060447!3d40.9276777487814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd1558555fbe75%3A0x51a05ada005765d8!2sPlaza!5e0!3m2!1sru!2skg!4v1716996163234!5m2!1sru!2skg')"><img src="img/map.png"/>г. Джалал-Абад; ул.
-                                Токтогула 40; ТЦ
-                                Plaza;</span><a href="tel:+996554468888">+996 554 46-88-88</a></p>
-                        <p><span
-                                onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4289.936648427664!2d72.81999159585526!3d40.509691935603925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdaf57ebed3aa7%3A0x569a1082809d54cd!2s%22MAXCOM%22%20Urban%20Mall!5e0!3m2!1sru!2skg!4v1716995840991!5m2!1sru!2skg')"><img src="img/map.png"/>г.
-                                Ош; ул. Аскара
-                                Шакирова 30; ТЦ
-                                Maxcom Urban Mall; 2 этаж;</span><a href="tel:+996554368888">+996 554 36-88-88</a></p>
 
                         <div>
-                            <h4>ADIDAS</h4>
-                        </div>
-                        <p><span onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')"><img src="img/map.png"/>г. Бишкек; ул.
-                                Шопокова 91; ТРЦ ЦУМ Айчурек;</span><a href="tel:+996998488080">+996 998 48-80-80</a>
-                        </p>
+                            <div>
+                                <h4>XTEP</h4>
+                            </div>
+                            <div class="contacts-item">
+                                <span
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')"><img
+                                        src="img/map.svg" />г. Бишкек; ул.
+                                    Шопокова 91; ТРЦ ЦУМ Айчурек;</span>
 
-                        <div>
-                            <h4>XTEP</h4>
+                                <span>
+                                    <img src="img/phone.svg" />
+                                    <a href="tel:+996998488080">+996 998
+                                        48-80-80</a>
+                                </span>
+                            </div>
+                            <div class="contacts-item">
+                                <span
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.8116908462!2d74.58258377729538!3d42.85570920364228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9d3088356eb%3A0xb6b7beaa1240556a!2z0JDQt9C40Y8g0JzQvtC70Ls!5e0!3m2!1sru!2skg!4v1716996065367!5m2!1sru!2skg')"><img
+                                        src="img/map.svg" />г. Бишкек; пр.
+                                    Чынгыза Айтматова 3;
+                                    ТРЦ Asia Mall; 2 этаж;</span>
+                                <span>
+                                    <img src="img/phone.svg" />
+                                    <a href="tel:+996999488080">+996 999 48-80-80</a>
+                                </span>
+                            </div>
+                            <div class="contacts-item">
+                                <span
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6028.91150066074!2d72.9981912060447!3d40.9276777487814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd1558555fbe75%3A0x51a05ada005765d8!2sPlaza!5e0!3m2!1sru!2skg!4v1716996163234!5m2!1sru!2skg')"><img
+                                        src="img/map.svg" />г. Джалал-Абад; ул.
+                                    Токтогула 40; ТЦ
+                                    Plaza;</span>
+                                <span>
+                                    <img src="img/phone.svg" />
+                                    <a href="tel:+996554468888">+996 554 46-88-88</a>
+                                </span>
+                            </div>
                         </div>
-                        <p><span onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')"><img src="img/map.png"/>г. Бишкек; ул.
-                                Шопокова 91; ТРЦ ЦУМ Айчурек;</span><a href="tel:+996998488080">+996 998 48-80-80</a>
-                        </p>
-                        <p><span onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.8116908462!2d74.58258377729538!3d42.85570920364228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9d3088356eb%3A0xb6b7beaa1240556a!2z0JDQt9C40Y8g0JzQvtC70Ls!5e0!3m2!1sru!2skg!4v1716996065367!5m2!1sru!2skg')"><img src="img/map.png"/>г. Бишкек; пр.
-                                Чынгыза Айтматова 3;
-                                ТРЦ Asia Mall; 2 этаж;</span><a href="tel:+996999488080">+996 999 48-80-80</a></p>
-                        <p><span onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6028.91150066074!2d72.9981912060447!3d40.9276777487814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd1558555fbe75%3A0x51a05ada005765d8!2sPlaza!5e0!3m2!1sru!2skg!4v1716996163234!5m2!1sru!2skg')"><img src="img/map.png"/>г. Джалал-Абад; ул.
-                                Токтогула 40; ТЦ
-                                Plaza;</span><a href="tel:+996554468888">+996 554 46-88-88</a></p>
+                        <div>
+                            <div>
+                                <h4>ADIDAS</h4>
+                            </div>
+                            <div class="contacts-item">
+                                <span
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')"><img
+                                        src="img/map.svg" />г. Бишкек; ул.
+                                    Шопокова 91; ТРЦ ЦУМ Айчурек;</span>
+                                <span>
+                                    <img src="img/phone.svg" />
+                                    <a href="tel:+996998488080">+996 998
+                                        48-80-80</a>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -307,20 +387,9 @@
                 button_id: buttonId
             });
         }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const buttons = document.querySelectorAll('a, button, .dropdown-content a, .header-language span');
-            buttons.forEach(button => {
-                button.addEventListener('click', logButtonClick);
-            });
-
-            document.querySelector('.burger-menu').addEventListener('click', () => {
-                logEvent(analytics, 'menu_toggle', {
-                    menu_state: document.querySelector('.header').classList.contains('open') ? 'open' : 'closed'
-                });
-            });
-        }); </script>
+ </script>
     <script src="js/index.js"></script>
+    <script src="js/wow.js"></script>
 </body>
 
 </html>
