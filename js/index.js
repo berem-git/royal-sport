@@ -97,11 +97,11 @@ const localization = {
 
 function changeLanguage(language) {
   document.getElementById("adidasHistory1").textContent =
-  localization[language].adidasHistory1;
-document.getElementById("adidasHistory2").textContent =
-  localization[language].adidasHistory2;
-document.getElementById("adidasHistory3").textContent =
-  localization[language].adidasHistory3;
+    localization[language].adidasHistory1;
+  document.getElementById("adidasHistory2").textContent =
+    localization[language].adidasHistory2;
+  document.getElementById("adidasHistory3").textContent =
+    localization[language].adidasHistory3;
 
   document.getElementById("erkeHistory1").textContent =
     localization[language].erkeHistory1;
@@ -128,8 +128,6 @@ document.getElementById("adidasHistory3").textContent =
     localization[language].cooperation;
   document.getElementById("geography").textContent =
     localization[language].geography;
-
-
 
   localStorage.setItem("preferredLanguage", language);
   document.querySelectorAll(".header-language span").forEach((span) => {
@@ -176,16 +174,15 @@ function toggleBurgerMenu() {
 }
 
 document.addEventListener("click", function (event) {
-const dropdown = document.querySelector(".dropdown");
-const burgerMenu = document.querySelector(".burger-menu");
-const isClickInsideDropdown = dropdown.contains(event.target);
-const isClickInsideBurgerMenu = burgerMenu.contains(event.target);
+  const dropdown = document.querySelector(".dropdown");
+  const burgerMenu = document.querySelector(".burger-menu");
+  const isClickInsideDropdown = dropdown.contains(event.target);
+  const isClickInsideBurgerMenu = burgerMenu.contains(event.target);
 
-if (!isClickInsideDropdown && !isClickInsideBurgerMenu) {
-  dropdown.classList.remove("active");
-  document.querySelector(".header").classList.remove("open");
-}
+  if (!isClickInsideDropdown && !isClickInsideBurgerMenu) {
+    dropdown.classList.remove("active");
+    document.querySelector(".header").classList.remove("open");
+  }
 });
-
 
 window.onload = loadPreferredLanguage;
