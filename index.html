@@ -10,52 +10,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.svg">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="header-wrapper animate__animated animate__fadeInRight">
+        <div class=" header-wrapper">
             <header class="header">
-                <div class="header-menu">
+                <div class="animate__animated animate__fadeInLeft header-menu">
                     <img class="logo" src="img/logo.svg" />
                     <a href="#abouts" id="about">О нас</a>
                     <div class="dropdown">
                         <a href="#" id="brand" onclick="toggleDropdown(event)">Бренды</a>
-                        <div class="dropdown-content">
+                        <div onclick="hideMenu()" class="animate__animated animate__fadeInRight dropdown-content">
                             <a href="#brand1">ERKE</a>
                             <a href="#brand2">XTEP</a>
                             <a href="#brand3">ADIDAS</a>
                         </div>
                     </div>
-                    <a href="#" id="cooperation">Сотрудничество</a>
                     <a href="#contacts-id" id="geography">География</a>
+                    <a href="#cooperations" id="cooperation">Сотрудничество</a>
                 </div>
-                <div class="burger-menu" onclick="toggleBurgerMenu()">
+                <div class="burger-menu animate__animated animate__zoomIn" onclick="toggleBurgerMenu()">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
                 <img class="logo-mobile" src="img/logo.svg" />
-                <div class="header-language">
-                    <span id="lang-ru">RU</span>
-                    <span id="lang-en">EN</span>
-                    <span id="lang-kg">KG</span>
+                <div class="animate__animated animate__fadeInRight header-language">
+                    <img id="lang-en" src="img/eng.svg" />
+                    <img id="lang-ru" src="img/rus.svg" />
+                    <img id="lang-kg" src="img/kg.svg" />
                 </div>
             </header>
         </div>
         <main>
             <img class="content_main-banner animate__animated animate__zoomIn" src="img/banner-rs.png" />
             <div id="abouts" class="content">
-                <h1 class="content-title">ДОБРО ПОЖАЛОВАТЬ В МИР <span>ROYAL SPORT!</span></h1>
+                <h1 id="welcome-message" class="content-title animate__animated animate__zoomIn">
+                    <span id="welcome-text">ДОБРО ПОЖАЛОВАТЬ В МИР</span> <span id="royal-sport-text">ROYAL
+                        SPORT!</span>
+                </h1>
                 <div class="content-block line">
-                    <div>
+                    <div class="animate__animated animate__fadeInLeft">
                         <img class="content-block-img" src="img/20.jpg" />
                     </div>
-                    <div>
+                    <div class="animate__animated animate__fadeInRight">
                         <span id="royalBrends" class="content-block-title">
                             ROYAL SPORT — ОФИЦИАЛЬНЫЙ ПРЕДСТАВИТЕЛЬ КИТАЙСКОГО БРЕНДА ERKE, ADIDAS, XTEP В КЫРГЫЗСТАНЕ!
                         </span>
@@ -67,26 +67,33 @@
                         </p>
                     </div>
                 </div>
-                <div class="content-block ">
-                    <h2 style="margin: 16px 0;" class="content-title">МЫ БУДЕМ <span>ПОЛЕЗНЫ</span> ТЕМ, КТО:</h2>
-                    <div class="content-list">
+                <div class="content-block">
+                    <h2 id="useful-message" style="margin: 16px 0;"
+                        class="content-title animate__animated animate__fadeInLeft">
+                        МЫ БУДЕМ <span>ПОЛЕЗНЫ</span> ТЕМ, КТО:
+                    </h2>
+                    <div class="content-list wow animate__animated animate__fadeInRight">
                         <div class="content-item">
                             <img src="img/zip.svg">
-                            <span>Желает расширить ассортимент магазина</span>
+                            <span id="content-item-1">Желает расширить ассортимент магазина</span>
                         </div>
                         <div class="content-item">
                             <img src="img/zip.svg">
-                            <span>Ищет партнера для открытия бизнеса</span>
+                            <span id="content-item-2">Ищет партнера для открытия бизнеса</span>
                         </div>
                         <div class="content-item">
                             <img src="img/zip.svg">
-                            <span>Занимается одеждой для спортивных команд или готовит соревнования</span>
+                            <span id="content-item-3">Занимается одеждой для спортивных команд или готовит
+                                соревнования</span>
                         </div>
                     </div>
+
                 </div>
                 <div id="brand1" class="content-block line">
-                    <img class="content-block-img" src="img/erke.jpeg" />
-                    <div class="content-block-history line">
+                    <div class="wow animate__animated animate__fadeInRight">
+                        <img class="content-block-img" src="img/erke.jpeg" />
+                    </div>
+                    <div class="wow animate__animated animate__fadeInLeft content-block-history line">
                         <span class="content-block-title-h2">
                             ERKE
                         </span>
@@ -100,7 +107,7 @@
                             монобрендовых магазинов, расположенных по всему Китаю и по всему
                             миру.
                         </p>
-                        <p id="erkeHistory2">
+                        <p id="erkeHistory2" class="hidden animate__animated animate__bounceInRight">
                             На Олимпийских играх 2012 года
                             спонсировал олимпийские комитеты Южной
                             Африки, Ирана и Узбекистана, которые в общей
@@ -114,7 +121,7 @@
                             Организационного комитета Олимпийских игр
                             Хорватии
                         </p>
-                        <p id="erkeHistory3">
+                        <p id="erkeHistory3" class="hidden animate__animated animate__bounceInRight">
                             На Олимпийских играх 2008 года
                             спонсировал женскую сборную Китая по тяжелой
                             атлетике весом до 48 кг, представленную Чэнь Сеся,
@@ -122,12 +129,15 @@
                             спонсировал КНДР Кореи, завоевавшую две золотые,
                             одну серебряную и три бронзовые медали.
                         </p>
+                        <span id="show-more-button" class="show-more-button"
+                            onclick="showMore(this,'erkeHistory2', 'erkeHistory3')">...подробнее</span>
+
                     </div>
                 </div>
                 <div id="brand2" class="content-block line">
-                    <img class="content-block-img" src="img/xtep.jpg" />
+                    <img class="content-block-img wow animate__animated animate__bounceInLeft" src="img/xtep.jpg" />
 
-                    <div class="content-block-history">
+                    <div class="content-block-history wow animate__animated animate__bounceInRight">
                         <span class="content-block-title-h2">
                             XTEP
                         </span>
@@ -142,7 +152,7 @@
                             по всей территории КНР и за рубежом.
                             Компания «Sanxing Sporting Goods Co., Ltd.» была основана в 1987 году
                         </p>
-                        <p id="xtepHistory2">
+                        <p id="xtepHistory2" class="hidden animate__animated animate__bounceInRight">
                             Бренд Xtep создан в 2001 году
                             3 июня 2008 года состоялась официальная регистрация торговой марки на Гонконгской
                             фондовой бирже.
@@ -151,17 +161,19 @@
                             группой. . В настоящее время Группа управляет шестью спортивными брендами: Xtep, Xtep
                             Kids, Saucony, Merrell, K · SWISS и Palladium.
                         </p>
-                        <p id="xtepHistory3">
+                        <p id="xtepHistory3" class="hidden animate__animated animate__bounceInRight">
                             С момента своего создания в 2001 году основной бренд группы “Xtep” имеет обширную
                             дистрибьюторскую сеть из более чем 7500 розничных магазинов, охватывающих 31 провинцию,
                             автономный район и муниципалитет Китая, а также зарубежные регионы. В настоящее время
                             зарубежные продажи продукции в Азии, Европе и на Среднем Востоке.
                         </p>
+                        <span id="show-more-button" class="show-more-button"
+                            onclick="showMore(this, 'xtepHistory3', 'xtepHistory2')">...подробнее</span>
                     </div>
                 </div>
                 <div id="brand3" class="content-block">
-                    <img class="content-block-img" src="img/adidas.png" />
-                    <div class="content-block-history line">
+                    <img class="content-block-img wow animate__animated animate__bounceInLeft" src="img/adidas.png" />
+                    <div class="content-block-history line wow animate__animated animate__bounceInRight">
                         <span class="content-block-title-h2 ">
                             ADIDAS
                         </span>
@@ -172,29 +184,36 @@
                             обширные возможности исследований и разработок, производства, продаж и маркетинга, что
                             позволяет ей оставаться на передовой спортивной индустрии.
                         </p>
-                        <p id="adidasHistory2">
+                        <p id="adidasHistory2" class="hidden animate__animated animate__bounceInRight">
                             adidas активно внедряет инновации и использует новейшие технологии для создания
                             высококачественной продукции. Особое внимание уделяется устойчивому развитию и экологически
                             чистым материалам, что отражается в различных инициативах компании по защите окружающей
                             среды.
                         </p>
-                        <p id="adidasHistory3">
+                        <p id="adidasHistory3" class="hidden animate__animated animate__bounceInRight">
                             Благодаря своей приверженности качеству и инновациям, adidas завоевала доверие миллионов
                             спортсменов и любителей активного образа жизни по всему миру. Компания продолжает расширять
                             своё присутствие на глобальном рынке, открывая новые магазины и улучшая существующие, чтобы
                             обеспечить доступ к своей продукции каждому, кто стремится к лучшим результатам.
                         </p>
+                        <span id="show-more-button" class="show-more-button"
+                            onclick="showMore(this,'adidasHistory2', 'adidasHistory3')">...подробнее</span>
+
                     </div>
                 </div>
                 <div id="contacts-id">
                     <div>
-                        <h2 class="content-block-title-h2">ГЕОГРАФИЯ <span>ROYAL SPORT</span></h2>
-                        <p>
+                        <h2 id="geography-title"
+                            class="content-block-title-h2 wow animate__animated animate__bounceInLeft ma-md">
+                            ГЕОГРАФИЯ <span>ROYAL SPORT</span>
+                        </h2>
+                        <p id="geography-description" class="mx-md wow animate__animated animate__bounceInLeft ma-md">
                             Мы стремимся быть ближе к покупателю, поэтому активно развиваем как оптовый, так и розничный
                             канал.
                             Приходи и ощути атмосферу стиля и комфорта. Мы ждем тебя в наших магазинах:
                         </p>
-                        <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+                        <div class="wow animate__animated animate__bounceInLeft"
+                            style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
                             <iframe id="map"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365.4863956318038!2d74.59051230718326!3d42.87514125298565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dec2f84b71%3A0x29c1629c788878ab!2z0JHQuNGI0LrQtdC6INCf0LDRgNC6!5e0!3m2!1sru!2skg!4v1716916857577!5m2!1sru!2skg"
                                 width="600" height="450"
@@ -203,62 +222,58 @@
                             </iframe>
                         </div>
                     </div>
-                    <div id="contacts" class="contacts">
+
+                    <div id="contacts" class="contacts wow animate__animated animate__fadeInUp">
                         <div>
                             <div>
-                                <h4 style="margin-top: 0;">ERKE</h4>
+                                <h4 id="erke-title" style="margin-top: 0;">ERKE</h4>
                             </div>
                             <div class="contacts-item">
-                                <span
-                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')"><img
-                                        src="img/map.svg" />г. Бишкек; ул.
-                                    Шопокова 91; ТРЦ ЦУМ Айчурек;</span>
+                                <span id="erke-location-1"
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')">
+                                    <img src="img/map.svg" />г. Бишкек; ул. Шопокова 91; ТРЦ ЦУМ Айчурек;
+                                </span>
                                 <span>
-                                    <img src="img/phone.svg" /> <a href="tel:+996998488080">+996 998
-                                        48-80-80</a>
+                                    <img src="img/phone.svg" />
+                                    <a href="tel:+996998488080">+996 998 48-80-80</a>
                                 </span>
                             </div>
                             <div class="contacts-item">
-                                <span
-                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365.4863956318038!2d74.59051230718326!3d42.87514125298565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dec2f84b71%3A0x29c1629c788878ab!2z0JHQuNGI0LrQtdC6INCf0LDRgNC6!5e0!3m2!1sru!2skg!4v1716916857577!5m2!1sru!2skg')"><img
-                                        src="img/map.svg" />г.
-                                    Бишкек; ул.
-                                    Киевская 148; ТРЦ Bishkek Park;</span>
+                                <span id="erke-location-2"
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365.4863956318038!2d74.59051230718326!3d42.87514125298565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dec2f84b71%3A0x29c1629c788878ab!2z0JHQuNGI0LrQtdC6INCf0LDRgNC6!5e0!3m2!1sru!2skg!4v1716916857577!5m2!1sru!2skg')">
+                                    <img src="img/map.svg" />г. Бишкек; ул. Киевская 148; ТРЦ Bishkek Park;
+                                </span>
                                 <span>
-                                    <img src="img/phone.svg" /> <a href="tel:+996998689888">+996 998
-                                        68-98-88</a>
+                                    <img src="img/phone.svg" />
+                                    <a href="tel:+996998689888">+996 998 68-98-88</a>
                                 </span>
                             </div>
                             <div class="contacts-item">
-                                <span
-                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.8116908462!2d74.58258377729538!3d42.85570920364228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9d3088356eb%3A0xb6b7beaa1240556a!2z0JDQt9C40Y8g0JzQvtC70Ls!5e0!3m2!1sru!2skg!4v1716996065367!5m2!1sru!2skg')"><img
-                                        src="img/map.svg" />г. Бишкек; пр.
-                                    Чынгыза Айтматова 3;
-                                    ТРЦ Asia Mall; 2 этаж;</span>
-
+                                <span id="erke-location-3"
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.8116908462!2d74.58258377729538!3d42.85570920364228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9d3088356eb%3A0xb6b7beaa1240556a!2z0JDQt9C40Y8g0JzQvtC70Ls!5e0!3m2!1sru!2skg!4v1716996065367!5m2!1sru!2skg')">
+                                    <img src="img/map.svg" />г. Бишкек; пр. Чынгыза Айтматова 3; ТРЦ Asia Mall; 2 этаж;
+                                </span>
                                 <span>
-                                    <img src="img/phone.svg" /> <a href="tel:+996999488080">+996 999 48-80-80</a>
+                                    <img src="img/phone.svg" />
+                                    <a href="tel:+996999488080">+996 999 48-80-80</a>
                                 </span>
                             </div>
                             <div class="contacts-item">
-                                <span
-                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6028.91150066074!2d72.9981912060447!3d40.9276777487814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd1558555fbe75%3A0x51a05ada005765d8!2sPlaza!5e0!3m2!1sru!2skg!4v1716996163234!5m2!1sru!2skg')"><img
-                                        src="img/map.svg" />г. Джалал-Абад; ул.
-                                    Токтогула 40; ТЦ
-                                    Plaza;</span>
+                                <span id="erke-location-4"
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6028.91150066074!2d72.9981912060447!3d40.9276777487814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd1558555fbe75%3A0x51a05ada005765d8!2sPlaza!5e0!3m2!1sru!2skg!4v1716996163234!5m2!1sru!2skg')">
+                                    <img src="img/map.svg" />г. Джалал-Абад; ул. Токтогула 40; ТЦ Plaza;
+                                </span>
                                 <span>
                                     <img src="img/phone.svg" />
                                     <a href="tel:+996554468888">+996 554 46-88-88</a>
                                 </span>
                             </div>
                             <div class="contacts-item">
-                                <span
-                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4289.936648427664!2d72.81999159585526!3d40.509691935603925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdaf57ebed3aa7%3A0x569a1082809d54cd!2s%22MAXCOM%22%20Urban%20Mall!5e0!3m2!1sru!2skg!4v1716995840991!5m2!1sru!2skg')"><img
-                                        src="img/map.svg" />г.
-                                    Ош; ул. Аскара
-                                    Шакирова 30; ТЦ
-                                    Maxcom Urban Mall; 2 этаж;</span>
-
+                                <span id="erke-location-5"
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4289.936648427664!2d72.81999159585526!3d40.509691935603925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdaf57ebed3aa7%3A0x569a1082809d54cd!2s%22MAXCOM%22%20Urban%20Mall!5e0!3m2!1sru!2skg!4v1716995840991!5m2!1sru!2skg')">
+                                    <img src="img/map.svg" />г. Ош; ул. Аскара Шакирова 30; ТЦ Maxcom Urban Mall; 2
+                                    этаж;
+                                </span>
                                 <span>
                                     <img src="img/phone.svg" />
                                     <a href="tel:+996554368888">+996 554 36-88-88</a>
@@ -268,37 +283,33 @@
 
                         <div>
                             <div>
-                                <h4>XTEP</h4>
+                                <h4 id="xtep-title">XTEP</h4>
                             </div>
                             <div class="contacts-item">
-                                <span
-                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')"><img
-                                        src="img/map.svg" />г. Бишкек; ул.
-                                    Шопокова 91; ТРЦ ЦУМ Айчурек;</span>
-
+                                <span id="xtep-location-1"
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')">
+                                    <img src="img/map.svg" />г. Бишкек; ул. Шопокова 91; ТРЦ ЦУМ Айчурек;
+                                </span>
                                 <span>
                                     <img src="img/phone.svg" />
-                                    <a href="tel:+996998488080">+996 998
-                                        48-80-80</a>
+                                    <a href="tel:+996998488080">+996 998 48-80-80</a>
                                 </span>
                             </div>
                             <div class="contacts-item">
-                                <span
-                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.8116908462!2d74.58258377729538!3d42.85570920364228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9d3088356eb%3A0xb6b7beaa1240556a!2z0JDQt9C40Y8g0JzQvtC70Ls!5e0!3m2!1sru!2skg!4v1716996065367!5m2!1sru!2skg')"><img
-                                        src="img/map.svg" />г. Бишкек; пр.
-                                    Чынгыза Айтматова 3;
-                                    ТРЦ Asia Mall; 2 этаж;</span>
+                                <span id="xtep-location-2"
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.8116908462!2d74.58258377729538!3d42.85570920364228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9d3088356eb%3A0xb6b7beaa1240556a!2z0JDQt9C40Y8g0JzQvtC70Ls!5e0!3m2!1sru!2skg!4v1716996065367!5m2!1sru!2skg')">
+                                    <img src="img/map.svg" />г. Бишкек; пр. Чынгыза Айтматова 3; ТРЦ Asia Mall; 2 этаж;
+                                </span>
                                 <span>
                                     <img src="img/phone.svg" />
                                     <a href="tel:+996999488080">+996 999 48-80-80</a>
                                 </span>
                             </div>
                             <div class="contacts-item">
-                                <span
-                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6028.91150066074!2d72.9981912060447!3d40.9276777487814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd1558555fbe75%3A0x51a05ada005765d8!2sPlaza!5e0!3m2!1sru!2skg!4v1716996163234!5m2!1sru!2skg')"><img
-                                        src="img/map.svg" />г. Джалал-Абад; ул.
-                                    Токтогула 40; ТЦ
-                                    Plaza;</span>
+                                <span id="xtep-location-3"
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6028.91150066074!2d72.9981912060447!3d40.9276777487814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd1558555fbe75%3A0x51a05ada005765d8!2sPlaza!5e0!3m2!1sru!2skg!4v1716996163234!5m2!1sru!2skg')">
+                                    <img src="img/map.svg" />г. Джалал-Абад; ул. Токтогула 40; ТЦ Plaza;
+                                </span>
                                 <span>
                                     <img src="img/phone.svg" />
                                     <a href="tel:+996554468888">+996 554 46-88-88</a>
@@ -307,54 +318,59 @@
                         </div>
                         <div>
                             <div>
-                                <h4>ADIDAS</h4>
+                                <h4 id="adidas-title">ADIDAS</h4>
                             </div>
                             <div class="contacts-item">
-                                <span
-                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')"><img
-                                        src="img/map.svg" />г. Бишкек; ул.
-                                    Шопокова 91; ТРЦ ЦУМ Айчурек;</span>
+                                <span id="adidas-location-1"
+                                    onclick="changeMapLocation('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8427776131975!2d74.61189947729588!3d42.8761625023381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9Cc!5e0!3m2!1sru!2skg!4v1716995960768!5m2!1sru!2skg')">
+                                    <img src="img/map.svg" />г. Бишкек; ул. Шопокова 91; ТРЦ ЦУМ Айчурек;
+                                </span>
                                 <span>
                                     <img src="img/phone.svg" />
-                                    <a href="tel:+996998488080">+996 998
-                                        48-80-80</a>
+                                    <a href="tel:+996998488080">+996 998 48-80-80</a>
                                 </span>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="container">
-                    <div class="content">
-                        <h2>ИНТЕРЕСНО <br><span>СОТРУДНИЧЕСТВО?</span></h2>
-                        <p>Дорогие друзья, мы с радостью ответим на ваши вопросы и поможем определиться с
-                            ассортиментом
+
+                <div id="cooperations" class="content-block wow animate__animated animate__fadeInUp">
+                    <div>
+                        <h2 id="cooperation-title">ИНТЕРЕСНО <br><span>СОТРУДНИЧЕСТВО?</span></h2>
+                        <p id="cooperation-description" style="max-width: 350px;">
+                            Дорогие друзья, мы с радостью ответим на ваши вопросы и поможем определиться с ассортиментом
                         </p>
-                        <p><a href="mailto:i.abdukadyrov@royalsport.kg">i.abdukadyrov@royalsport.kg</a></p>
+                        <p><a id="cooperation-email"
+                                href="mailto:i.abdukadyrov@royalsport.kg">i.abdukadyrov@royalsport.kg</a></p>
                     </div>
                     <div class="form-container">
                         <form id="contact-form">
-                            <input type="text" placeholder="Ваше имя" required>
-                            <input type="email" placeholder="Email" required>
-                            <input type="tel" placeholder="0 (555) 555 555" required>
-                            <textarea placeholder="Задайте свой вопрос" required></textarea>
-                            <select required>
+                            <input id="input-name" type="text" placeholder="Ваше имя" required>
+                            <input id="input-email" type="email" placeholder="Email" required>
+                            <input id="input-phone" type="tel" placeholder="0 (555) 555 555" required>
+                            <textarea id="input-question" placeholder="Задайте свой вопрос" required></textarea>
+                            <select id="select-email" required>
                                 <option value="" disabled selected>Выберите почту для отправки</option>
                                 <option value="i.abdukadyrov@royalsport.kg">i.abdukadyrov@royalsport.kg</option>
                             </select>
-                            <button type="submit">ОТПРАВИТЬ</button>
+                            <button id="submit-button" type="submit">ОТПРАВИТЬ</button>
                         </form>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="footer-content">
-                <img src="img/logo.svg" alt="Admix Sport Logo">
-                <p>© Royal Sport 2024</p>
-                <p>ОсОО Роял Спорт Кыргызстан, Бишкек ул. Федорова 13</p>
-            </div>
-        </footer>
+    </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="img/logo.svg" alt="Admix Sport Logo">
+            <p id="footer-copyright">© Royal Sport 2024</p>
+            <p id="footer-address">ОсОО Роял Спорт Кыргызстан, Бишкек ул. Федорова 13</p>
+        </div>
+    </footer>
+
     </div>
     </div>
     <script>
@@ -387,9 +403,12 @@
                 button_id: buttonId
             });
         }
- </script>
+    </script>
     <script src="js/index.js"></script>
     <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

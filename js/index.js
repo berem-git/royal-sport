@@ -4,7 +4,19 @@ const localization = {
     brand: "Бренды",
     cooperation: "Сотрудничество",
     geography: "География",
-    welcom: "ДОБРО ПОЖАЛОВАТЬ В МИР ROAYL SPORT!",
+    welcome: "ДОБРО ПОЖАЛОВАТЬ В МИР",
+    royalSport: "ROYAL SPORT!",
+    useful: "МЫ БУДЕМ",
+    usefulSpan: "ПОЛЕЗНЫ",
+    usefulSuffix: "ТЕМ, КТО:",
+    contentItem1: "Желает расширить ассортимент магазина",
+    contentItem2: "Ищет партнера для открытия бизнеса",
+    contentItem3:
+      "Занимается одеждой для спортивных команд или готовит соревнования",
+    showMore: "...подробнее",
+    geographyTitle: "ГЕОГРАФИЯ",
+    geographyDescription:
+      "Мы стремимся быть ближе к покупателю, поэтому активно развиваем как оптовый, так и розничный канал. Приходи и ощути атмосферу стиля и комфорта. Мы ждем тебя в наших магазинах:",
     royalBrendsDescription:
       "В нашем лице вы найдете сильного международного партнера, который активно растет и развивается. Вас ждет поддержка, взаимовыгодное сотрудничество и возможности для роста. Давайте создадим успешное будущее вместе!",
     royalBrends:
@@ -27,14 +39,49 @@ const localization = {
       "Adidas активно внедряет инновации и использует новейшие технологии для создания высококачественной продукции. Особое внимание уделяется устойчивому развитию и экологически чистым материалам, что отражается в различных инициативах компании по защите окружающей среды.",
     adidasHistory3:
       "Благодаря своей приверженности качеству и инновациям, adidas завоевала доверие миллионов спортсменов и любителей активного образа жизни по всему миру. Компания продолжает расширять своё присутствие на глобальном рынке, открывая новые магазины и улучшая существующие, чтобы обеспечить доступ к своей продукции каждому, кто стремится к лучшим результатам.",
+    erkeTitle: "ERKE",
+    erkeLocation1: "г. Бишкек; ул. Шопокова 91; ТРЦ ЦУМ Айчурек;",
+    erkeLocation2: "г. Бишкек; ул. Киевская 148; ТРЦ Bishkek Park;",
+    erkeLocation3: "г. Бишкек; пр. Чынгыза Айтматова 3; ТРЦ Asia Mall; 2 этаж;",
+    erkeLocation4: "г. Джалал-Абад; ул. Токтогула 40; ТЦ Plaza;",
+    erkeLocation5:
+      "г. Ош; ул. Аскара Шакирова 30; ТЦ Maxcom Urban Mall; 2 этаж;",
+    xtepTitle: "XTEP",
+    xtepLocation1: "г. Бишкек; ул. Шопокова 91; ТРЦ ЦУМ Айчурек;",
+    xtepLocation2: "г. Бишкек; пр. Чынгыза Айтматова 3; ТРЦ Asia Mall; 2 этаж;",
+    xtepLocation3: "г. Джалал-Абад; ул. Токтогула 40; ТЦ Plaza;",
+    adidasTitle: "ADIDAS",
+    adidasLocation1: "г. Бишкек; ул. Шопокова 91; ТРЦ ЦУМ Айчурек;",
+    footerCopyright: "© Royal Sport 2024",
+    footerAddress: "ОсОО Роял Спорт Кыргызстан, Бишкек ул. Федорова 13",
+    cooperationTitle: "ИНТЕРЕСНО <br><span>СОТРУДНИЧЕСТВО?</span>",
+    cooperationDescription:
+      "Дорогие друзья, мы с радостью ответим на ваши вопросы и поможем определиться с ассортиментом",
+    inputName: "Ваше имя",
+    inputEmail: "Email",
+    inputPhone: "0 (555) 555 555",
+    inputQuestion: "Задайте свой вопрос",
+    selectEmail: "Выберите почту для отправки",
+    submitButton: "ОТПРАВИТЬ",
   },
   en: {
     about: "About Us",
     brand: "Brands",
     cooperation: "Cooperation",
     geography: "Geography",
-    welcom: "WELCOME TO THE WORLD OF ROYAL SPORT!",
-
+    welcome: "WELCOME TO THE WORLD OF",
+    royalSport: "ROYAL SPORT!",
+    useful: "WE WILL BE",
+    usefulSpan: "USEFUL",
+    usefulSuffix: "FOR THOSE WHO:",
+    contentItem1: "Wants to expand the store's assortment",
+    contentItem2: "Looking for a partner to start a business",
+    geographyTitle: "GEOGRAPHY",
+    geographyDescription:
+      "We strive to be closer to the customer, so we actively develop both wholesale and retail channels. Come and feel the atmosphere of style and comfort. We are waiting for you in our stores:",
+    contentItem3:
+      "Deals with clothing for sports teams or organizes competitions",
+    showMore: "...more details",
     royalBrendsDescription:
       "In us you will find a strong international partner who is actively growing and developing. Support, mutually beneficial cooperation and opportunities for growth await you. Let's create a successful future together!",
 
@@ -58,6 +105,29 @@ const localization = {
       "Adidas is committed to innovation and utilizes the latest technologies to create high quality products. Special attention is paid to sustainability and eco-friendly materials, which is reflected in the company's various environmental initiatives.",
     adidasHistory3:
       "Through its commitment to quality and innovation, adidas has earned the trust of millions of athletes and active lifestyle enthusiasts around the world. The company continues to expand its presence in the global marketplace, opening new stores and improving existing ones to ensure that its products are available to everyone who strives for better performance.",
+    erkeTitle: "ERKE",
+    erkeLocation1: "Bishkek; Shapokova St. 91; Tsum Aichurek Mall;",
+    erkeLocation2: "Bishkek; Kiev St. 148; Bishkek Park Mall;",
+    erkeLocation3: "Bishkek; Chingiz Aitmatov Ave. 3; Asia Mall; 2nd floor;",
+    erkeLocation4: "Jalal-Abad; Toktogula St. 40; Plaza Mall;",
+    erkeLocation5: "Osh; Askar Shakirov St. 30; Maxcom Urban Mall; 2nd floor;",
+    xtepTitle: "XTEP",
+    xtepLocation1: "Bishkek; Shapokova St. 91; Tsum Aichurek Mall;",
+    xtepLocation2: "Bishkek; Chingiz Aitmatov Ave. 3; Asia Mall; 2nd floor;",
+    xtepLocation3: "Jalal-Abad; Toktogula St. 40; Plaza Mall;",
+    adidasTitle: "ADIDAS",
+    adidasLocation1: "Bishkek; Shapokova St. 91; Tsum Aichurek Mall;",
+    footerCopyright: "© Royal Sport 2024",
+    footerAddress: "Royal Sport LLC Kyrgyzstan, Bishkek Fedorova St. 13",
+    cooperationTitle: "INTERESTED IN <br><span>COOPERATION?</span>",
+    cooperationDescription:
+      "Dear friends, we are happy to answer your questions and help you with your assortment",
+    inputName: "Your name",
+    inputEmail: "Email",
+    inputPhone: "0 (555) 555 555",
+    inputQuestion: "Ask your question",
+    selectEmail: "Select email to send",
+    submitButton: "SEND",
   },
 
   kg: {
@@ -65,8 +135,19 @@ const localization = {
     brand: "Бренддер",
     cooperation: "Кызматташуу",
     geography: "География",
-    welcom: "ROYAL СПОРТ ДҮЙНӨСҮНӨ КОШ КЕЛИҢИЗ!",
-
+    welcome: "ROYAL SPORT ДҮЙНӨСҮНӨ",
+    royalSport: "КОШ КЕЛИҢИЗ!",
+    useful: "БИЗ БОЛОБУЗ",
+    usefulSpan: "ПАЙДАЛУУ",
+    usefulSuffix: "БОЛГОНДОР ҮЧҮН:",
+    contentItem1: "Дүкөндүн ассортиментин кеңейтүүнү каалайт",
+    contentItem2: "Бизнес ачуу үчүн өнөктөш издеп жатат",
+    contentItem3:
+      "Спорттук командалар үчүн кийим-кече менен алектенет же мелдештерди уюштурат",
+    showMore: "...кененирээк",
+    geographyTitle: "ГЕОГРАФИЯ",
+    geographyDescription:
+      "Биз кардарга жакын болууга умтулабыз, ошондуктан биз дүң жана чекене каналдарды активдүү өнүктүрөбүз. Келип, стилдин жана комфорттун атмосферасын сез. Биз сизди дүкөндөрүбүздө күтөбүз:",
     royalBrendsDescription:
       "Бизден сиз жигердүү өсүп жана өнүгүп жаткан күчтүү эл аралык өнөктөш таба аласыз. Сизди колдоо, өз ара пайдалуу кызматташуу жана өсүү үчүн мүмкүнчүлүктөр күтүп турат. Келгиле, ийгиликтүү келечекти бирге түзөлү!",
 
@@ -92,10 +173,105 @@ const localization = {
 
     adidasHistory3:
       "Сапатка жана инновацияларга берилгендиги аркылуу adidas дүйнө жүзүндөгү миллиондогон спортчулардын жана активдүү жашоо образына ынтызар адамдардын ишенимине ээ болду. Компания глобалдык рынокто өзүнүн катышуусун кеңейтүүнү улантууда, жаңы дүкөндөрдү ачып жана бар болгон дүкөндөрдү жакшыртып, анын продукциялары жакшыраак көрсөткүчтөргө умтулган ар бир адамга жеткиликтүү болушун камсыздайт.",
+    erkeTitle: "ERKE",
+    erkeLocation1: "Бишкек; Шопокова к. 91; ЦУМ Айчурек ТЦ;",
+    erkeLocation2: "Бишкек; Киев к. 148; Бишкеκ Парк ТЦ;",
+    erkeLocation3: "Бишкек; Чыңгыз Айтматов пр. 3; Азия ТЦ; 2-кабат;",
+    erkeLocation4: "Жалал-Абад; Токтогул к. 40; Плаза ТЦ;",
+    erkeLocation5: "Ош; Аскар Шакиров к. 30; Макском Урбан ТЦ; 2-кабат;",
+    xtepTitle: "XTEP",
+    xtepLocation1: "Бишкек; Шопокова к. 91; ЦУМ Айчурек ТЦ;",
+    xtepLocation2: "Бишкек; Чыңгыз Айтматов пр. 3; Азия ТЦ; 2-кабат;",
+    xtepLocation3: "Жалал-Абад; Токтогул к. 40; Плаза ТЦ;",
+    adidasTitle: "ADIDAS",
+    adidasLocation1: "Бишкек; Шопокова к. 91; ЦУМ Айчурек ТЦ;",
+    footerCopyright: "© Royal Sport 2024",
+    footerAddress: "ОсОО Роял Спорт Кыргызстан, Бишкек ул. Федорова 13",
+    cooperationTitle: "КЫЗЫКТЫРА <br><span>КЫЗМАТТАШТЫК?</span>",
+    cooperationDescription:
+      "Урматтуу достор, биз сиздердин суроолорго кубануу менен жооп беребиз жана ассортиментти тандоого жардам беребиз",
+    inputName: "Сиздин атыңыз",
+    inputEmail: "Email",
+    inputPhone: "0 (555) 555 555",
+    inputQuestion: "Сурооңузду бериңиз",
+    selectEmail: "Жөнөтүү үчүн почтаны тандаңыз",
+    submitButton: "ЖӨНӨТҮҮ",
   },
 };
 
 function changeLanguage(language) {
+  document.getElementById("cooperation-title").innerHTML =
+    localization[language].cooperationTitle;
+  document.getElementById("cooperation-description").textContent =
+    localization[language].cooperationDescription;
+  document.getElementById("input-name").placeholder =
+    localization[language].inputName;
+  document.getElementById("input-email").placeholder =
+    localization[language].inputEmail;
+  document.getElementById("input-phone").placeholder =
+    localization[language].inputPhone;
+  document.getElementById("input-question").placeholder =
+    localization[language].inputQuestion;
+  document.getElementById("select-email").options[0].text =
+    localization[language].selectEmail;
+  document.getElementById("submit-button").textContent =
+    localization[language].submitButton;
+
+  document.getElementById("erke-title").textContent =
+    localization[language].erkeTitle;
+  document.getElementById("erke-location-1").textContent =
+    localization[language].erkeLocation1;
+  document.getElementById("erke-location-2").textContent =
+    localization[language].erkeLocation2;
+  document.getElementById("erke-location-3").textContent =
+    localization[language].erkeLocation3;
+  document.getElementById("erke-location-4").textContent =
+    localization[language].erkeLocation4;
+  document.getElementById("erke-location-5").textContent =
+    localization[language].erkeLocation5;
+
+  document.getElementById("footer-copyright").textContent =
+    localization[language].footerCopyright;
+  document.getElementById("footer-address").textContent =
+    localization[language].footerAddress;
+
+  document.getElementById("xtep-title").textContent =
+    localization[language].xtepTitle;
+  document.getElementById("xtep-location-1").textContent =
+    localization[language].xtepLocation1;
+  document.getElementById("xtep-location-2").textContent =
+    localization[language].xtepLocation2;
+  document.getElementById("xtep-location-3").textContent =
+    localization[language].xtepLocation3;
+
+  document.getElementById("adidas-title").textContent =
+    localization[language].adidasTitle;
+  document.getElementById("adidas-location-1").textContent =
+    localization[language].adidasLocation1;
+
+  document.getElementById(
+    "welcome-message"
+  ).innerHTML = `${localization[language].welcome} <span>${localization[language].royalSport}</span>`;
+
+  document.getElementById(
+    "useful-message"
+  ).innerHTML = `${localization[language].useful} <span>${localization[language].usefulSpan}</span> ${localization[language].usefulSuffix}`;
+  document.getElementById("show-more-button").textContent =
+    localization[language].showMore;
+
+  document.getElementById(
+    "geography-title"
+  ).innerHTML = `${localization[language].geographyTitle} <span>ROYAL SPORT</span>`;
+  document.getElementById("geography-description").textContent =
+    localization[language].geographyDescription;
+
+  document.getElementById("content-item-1").textContent =
+    localization[language].contentItem1;
+  document.getElementById("content-item-2").textContent =
+    localization[language].contentItem2;
+  document.getElementById("content-item-3").textContent =
+    localization[language].contentItem3;
+
   document.getElementById("adidasHistory1").textContent =
     localization[language].adidasHistory1;
   document.getElementById("adidasHistory2").textContent =
@@ -200,4 +376,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function showMore(button, ...ids) {
+  ids.forEach(function (id) {
+    document.getElementById(id).style.display = "block";
+  });
+  button.style.display = "none";
+}
+
+function hideMenu() {
+  document.querySelector(".dropdown").classList.remove("active");
+  document.querySelector(".header").classList.remove("open");
+}
+
+document.querySelectorAll(".dropdown-content a").forEach((item) => {
+  item.addEventListener("click", hideMenu);
+});
+
 window.onload = loadPreferredLanguage;

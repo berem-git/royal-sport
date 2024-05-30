@@ -1,5 +1,4 @@
 @import "grid";
-
 .header {
     font-family: "Verdana", sans-serif;
     background-color: black;
@@ -53,22 +52,27 @@
         display: flex;
         justify-content: end;
         gap: 8px;
+        cursor: pointer;
 
         @media (min-width: 901px) {
             gap: 16px;
             margin-right: 24px;
         }
-
-        span {
-            cursor: pointer;
-
-            &:hover {
-                color: white;
-            }
-        }
     }
 }
 
+.ma-md {
+    margin: 16px;
+}
+
+.hidden {
+    display: none;
+}
+.show-more-button {
+    cursor: pointer;
+    color: #f0a500;
+    text-decoration: underline;
+}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -164,10 +168,6 @@
     }
 }
 
-.header-language .selected {
-    color: white;
-}
-
 .content {
     max-width: 1200px;
     margin: 0 auto;
@@ -197,7 +197,7 @@
         grid-template-columns: 1fr;
         margin: 0 16px 38px 16px;
         gap: 28px;
-    
+
         @media screen and (min-width: 670px) {
             grid-template-columns: 1fr 1fr;
             gap: 38px;
@@ -357,6 +357,8 @@
     span {
         cursor: pointer;
         display: flex;
+        color: #f0a500;
+        text-decoration: underline;
         align-items: center;
     }
 
@@ -475,7 +477,7 @@ footer {
     padding: 20px;
     border-radius: 8px;
     max-width: 400px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 form {
