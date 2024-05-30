@@ -403,6 +403,24 @@
                 button_id: buttonId
             });
         }
+        document.querySelectorAll('.contacts-item a[href^="tel:"]').forEach(phoneLink => {
+            phoneLink.addEventListener('click', function (event) {
+                const phoneNumber = event.target.href.replace('tel:', '');
+                logEvent(analytics, 'phone_click', {
+                    phone_number: phoneNumber
+                });
+            });
+        });
+
+        document.querySelectorAll('.contacts-item span[onclick]').forEach(mapLink => {
+            mapLink.addEventListener('click', function (event) {
+                const mapLocation = event.target.innerText;
+                logEvent(analytics, 'map_location_click', {
+                    map_location: mapLocation
+                });
+            });
+        });
+
     </script>
     <script src="js/index.js"></script>
     <script src="js/wow.js"></script>
