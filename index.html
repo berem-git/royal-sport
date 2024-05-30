@@ -420,7 +420,14 @@
                 });
             });
         });
-
+        document.querySelectorAll('.header-language img').forEach(langImg => {
+            langImg.addEventListener('click', function (event) {
+                const language = event.target.id.replace('lang-', '');
+                logEvent(analytics, 'language_change', {
+                    language: language
+                });
+            });
+        });
     </script>
     <script src="js/index.js"></script>
     <script src="js/wow.js"></script>
