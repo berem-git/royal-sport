@@ -549,4 +549,8 @@ button:hover {
 select {
   background-color: white;
   color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=style.css.map */
