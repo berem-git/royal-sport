@@ -251,8 +251,12 @@ function changeLanguage(language) {
   document.getElementById(
     "useful-message"
   ).innerHTML = `${localization[language].useful} <span>${localization[language].usefulSpan}</span> ${localization[language].usefulSuffix}`;
-  
-  document.getElementById("show-more-button").textContent =
+
+  document.getElementById("show-more-button1").textContent =
+    localization[language].showMore;
+  document.getElementById("show-more-button2").textContent =
+    localization[language].showMore;
+  document.getElementById("show-more-button3").textContent =
     localization[language].showMore;
 
   document.getElementById(
@@ -360,7 +364,6 @@ document.addEventListener("click", function (event) {
   }
 });
 document.addEventListener("DOMContentLoaded", () => {
- 
   document.querySelector(".burger-menu").addEventListener("click", () => {
     logEvent(analytics, "menu_toggle", {
       menu_state: document.querySelector(".header").classList.contains("open")
