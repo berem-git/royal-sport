@@ -50,7 +50,6 @@ const localization = {
     xtepLocation1: "г. Бишкек; ул. Шопокова 91; ТРЦ ЦУМ Айчурек;",
     xtepLocation2: "г. Бишкек; пр. Чынгыза Айтматова 3; ТРЦ Asia Mall; 2 этаж;",
     xtepLocation3: "г. Джалал-Абад; ул. Токтогула 40; ТЦ Plaza;",
-    adidasTitle: "ADIDAS",
     adidasLocation1: "г. Бишкек; ул. Шопокова 91; ТРЦ ЦУМ Айчурек;",
     footerCopyright: "© Royal Sport 2024",
     footerAddress: "ОсОО Роял Спорт Кыргызстан, Бишкек ул. Федорова 13",
@@ -115,7 +114,6 @@ const localization = {
     xtepLocation1: "Bishkek; Shapokova St. 91; Tsum Aichurek Mall;",
     xtepLocation2: "Bishkek; Chingiz Aitmatov Ave. 3; Asia Mall; 2nd floor;",
     xtepLocation3: "Jalal-Abad; Toktogula St. 40; Plaza Mall;",
-    adidasTitle: "ADIDAS",
     adidasLocation1: "Bishkek; Shapokova St. 91; Tsum Aichurek Mall;",
     footerCopyright: "© Royal Sport 2024",
     footerAddress: "Royal Sport LLC Kyrgyzstan, Bishkek Fedorova St. 13",
@@ -183,7 +181,6 @@ const localization = {
     xtepLocation1: "Бишкек; Шопокова к. 91; ЦУМ Айчурек ТЦ;",
     xtepLocation2: "Бишкек; Чыңгыз Айтматов пр. 3; Азия ТЦ; 2-кабат;",
     xtepLocation3: "Жалал-Абад; Токтогул к. 40; Плаза ТЦ;",
-    adidasTitle: "ADIDAS",
     adidasLocation1: "Бишкек; Шопокова к. 91; ЦУМ Айчурек ТЦ;",
     footerCopyright: "© Royal Sport 2024",
     footerAddress: "ОсОО Роял Спорт Кыргызстан, Бишкек ул. Федорова 13",
@@ -244,8 +241,6 @@ function changeLanguage(language) {
   document.getElementById("xtep-location-3").textContent =
     localization[language].xtepLocation3;
 
-  document.getElementById("adidas-title").textContent =
-    localization[language].adidasTitle;
   document.getElementById("adidas-location-1").textContent =
     localization[language].adidasLocation1;
 
@@ -256,6 +251,7 @@ function changeLanguage(language) {
   document.getElementById(
     "useful-message"
   ).innerHTML = `${localization[language].useful} <span>${localization[language].usefulSpan}</span> ${localization[language].usefulSuffix}`;
+  
   document.getElementById("show-more-button").textContent =
     localization[language].showMore;
 
