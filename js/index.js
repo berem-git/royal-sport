@@ -345,6 +345,9 @@ function toggleBurgerMenu() {
   document.querySelector(".header").classList.toggle("open");
 }
 
+function logButtonClick(eventName) {
+  logEvent(analytics, eventName);
+}
 document.addEventListener("click", function (event) {
   const dropdown = document.querySelector(".dropdown");
   const burgerMenu = document.querySelector(".burger-menu");
@@ -357,13 +360,7 @@ document.addEventListener("click", function (event) {
   }
 });
 document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(
-    "a, button, .dropdown-content a, .header-language span"
-  );
-  buttons.forEach((button) => {
-    button.addEventListener("click", logButtonClick);
-  });
-
+ 
   document.querySelector(".burger-menu").addEventListener("click", () => {
     logEvent(analytics, "menu_toggle", {
       menu_state: document.querySelector(".header").classList.contains("open")
