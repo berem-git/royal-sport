@@ -399,7 +399,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
     const targetId = this.getAttribute("href").substring(1);
     const targetElement = document.getElementById(targetId);
-    const offset = 100; // Отступ в пикселях
+    const offset = 100;
     const elementPosition = targetElement.getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.pageYOffset - offset;
 
