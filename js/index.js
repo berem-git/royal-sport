@@ -13,6 +13,7 @@ const localization = {
     contentItem2: "Ищет партнера для открытия бизнеса",
     contentItem3:
       "Занимается одеждой для спортивных команд или готовит соревнования",
+    instagram: "Наш инстраграм",
     showMore: "...подробнее",
     geographyTitle: "ГЕОГРАФИЯ",
     geographyDescription:
@@ -76,6 +77,7 @@ const localization = {
     contentItem1: "Wants to expand the store's assortment",
     contentItem2: "Looking for a partner to start a business",
     geographyTitle: "GEOGRAPHY",
+    instagram: "Our Instagram",
     geographyDescription:
       "We strive to be closer to the customer, so we actively develop both wholesale and retail channels. Come and feel the atmosphere of style and comfort. We are waiting for you in our stores:",
     contentItem3:
@@ -140,6 +142,7 @@ const localization = {
     usefulSuffix: "БОЛГОНДОР ҮЧҮН:",
     contentItem1: "Дүкөндүн ассортиментин кеңейтүүнү каалайт",
     contentItem2: "Бизнес ачуу үчүн өнөктөш издеп жатат",
+    instagram: "Биздин Инстаграм",
     contentItem3:
       "Спорттук командалар үчүн кийим-кече менен алектенет же мелдештерди уюштурат",
     showMore: "...кененирээк",
@@ -226,6 +229,8 @@ function changeLanguage(language) {
     localization[language].erkeLocation4;
   document.getElementById("erke-location-5").textContent =
     localization[language].erkeLocation5;
+  document.getElementById("instagram").textContent =
+    localization[language].instagram;
 
   document.getElementById("footer-copyright").textContent =
     localization[language].footerCopyright;

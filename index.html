@@ -372,6 +372,15 @@
                                     <a href="tel:+996998488080">+996 998 48-80-80</a>
                                 </span>
                             </div>
+                            <a href="https://www.instagram.com/adidas.royalsport/" target="_blank"
+                                style="text-decoration: none; color: inherit;">
+                                <div class="instagram">
+                                    <img src="img/instagram.svg" alt="Instagram"
+                                        style="vertical-align: middle; margin-right: 8px;" />
+                                    <span id="instagram">Наш инстаграм</span>
+                                </div>
+                            </a>
+
                         </div>
                     </div>
 
@@ -423,6 +432,46 @@
             mapIframe.src = newSrc;
         }
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем стандартное поведение формы
+    
+            // Сбор данных формы
+            const name = document.getElementById('input-name').value;
+            const email = document.getElementById('input-email').value;
+            const phone = document.getElementById('input-phone').value;
+            const question = document.getElementById('input-question').value;
+            const toEmail = document.getElementById('select-email').value;
+    
+            // Формирование тела письма
+            const body = `
+                Имя: ${name}\n
+                Email: ${email}\n
+                Телефон: ${phone}\n
+                Вопрос: ${question}
+            `;
+    
+            // Отправка письма с использованием SMTPJS
+            Email.send({
+                SecureToken: "YOUR_SECURE_TOKEN",
+                To: toEmail,
+                From: email,
+                Subject: "Новое сообщение с сайта",
+                Body: body
+            }).then(
+                message => {
+                    if (message === 'OK') {
+                        alert('Ваше сообщение отправлено!');
+                        document.getElementById('contact-form').reset(); // Сброс формы
+                    } else {
+                        alert('Произошла ошибка при отправке сообщения. Пожалуйста, попробуйте снова.');
+                        console.error(message);
+                    }
+                }
+            );
+        });
+    </script>
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
         import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
@@ -439,6 +488,13 @@
 
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
+
+        document.querySelector('.instagram-link').addEventListener('click', function () {
+            logEvent(analytics, 'instagram_click', {
+                platform: 'instagram',
+                page_url: 'https://www.instagram.com/adidas.royalsport/'
+            });
+        });
 
         document.querySelectorAll('.contacts-item a[href^="tel:"]').forEach(phoneLink => {
             phoneLink.addEventListener('click', function (event) {
